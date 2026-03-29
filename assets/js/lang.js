@@ -6,7 +6,7 @@ const translations = [
     { selector: ".nav-list li:nth-child(4) .nav-link", en: "Pricing", bn: "মূল্যতালিকা" },
     { selector: ".nav-list li:nth-child(5) .nav-link", en: "Reviews", bn: "রিভিউ" },
     { selector: ".nav-list li:nth-child(6) .nav-link", en: "Contact", bn: "যোগাযোগ" },
-    { selector: ".btn-book", en: "Book Now", bn: "বুক করুন" },
+    { selector: ".btn-login", en: "Log in", bn: "লগইন" },
 
     // Hero Section (index.html)
     { selector: ".hero .sub-heading", en: "Premium Grooming Experience", bn: "প্রিমিয়াম গ্রুমিং অভিজ্ঞতা" },
@@ -80,7 +80,7 @@ const translations = [
     { selector: ".full-menu-section .menu-category:nth-child(2) .pricing-title", en: "<i class=\"fas fa-user-tie text-gold\"></i> Beard & Shave", bn: "<i class=\"fas fa-user-tie text-gold\"></i> দাড়ি এবং শেভ" },
     { selector: ".full-menu-section .menu-category:nth-child(3) .pricing-title", en: "<i class=\"fas fa-spa text-gold\"></i> Spa Treatments", bn: "<i class=\"fas fa-spa text-gold\"></i> স্পা ট্রিটমেন্ট" },
     { selector: ".full-menu-section .menu-category:nth-child(4) .pricing-title", en: "<i class=\"fas fa-crown text-gold\"></i> Signature Packages", bn: "<i class=\"fas fa-crown text-gold\"></i> সিগনেচার প্যাকেজ" },
-    { selector: ".full-menu-section .btn-primary:not(#btn_book)", en: "Book Your Appointment Now", bn: "এখনই আপনার অ্যাপয়েন্টমেন্ট বুক করুন" },
+    { selector: ".full-menu-section .btn-primary:not(#btn_login)", en: "Book Your Appointment Now", bn: "এখনই আপনার অ্যাপয়েন্টমেন্ট বুক করুন" },
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
