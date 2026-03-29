@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Menz Groom</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Dashboard Specific CSS -->
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    
+    <!-- Auth Check -->
+    <script>
+        if (sessionStorage.getItem('menzgroom_admin_logged_in') !== 'true') {
+            window.location.href = 'login.html';
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <a href="index.html" class="logo-text">Menz<span class="text-gold">Groom</span></a>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="dashboard.html" class="nav-item active">
+                <i class="fas fa-inbox"></i> Form Entries
+            </a>
+            <a href="index.html" class="nav-item">
+                <i class="fas fa-external-link-alt"></i> Visit Site
+            </a>
+            <a href="#" class="nav-item" id="logoutBtn" style="margin-top:auto; border-top:1px solid var(--border-color);">
+                <i class="fas fa-sign-out-alt"></i> Logout
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Topbar -->
+        <header class="topbar">
+            <h2 class="page-title">Contact Forms</h2>
+            <div class="user-profile">
+                <span>Admin</span>
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Admin">
+            </div>
+        </header>
+
+        <!-- Container -->
+        <div class="dashboard-container">
+            
+            <!-- Key Stats -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-envelope"></i></div>
+                    <div class="stat-info">
+                        <h3>Total Entries</h3>
+                        <p id="totalContacts">0</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-envelope-open-text"></i></div>
+                    <div class="stat-info">
+                        <h3>Unread</h3>
+                        <p id="unreadContacts" class="text-gold">0</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Table -->
+            <div class="data-card">
+                <div class="data-card-header">
+                    <h3>Recent Messages</h3>
+                    <button class="btn-clear" id="clearAllBtn"><i class="fas fa-trash-alt"></i> Clear All</button>
+                </div>
+                <div class="table-responsive">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Date Submitted</th>
+                                <th>Name</th>
+                                <th>Mobile Number</th>
+                                <th>Subject</th>
+                                <th>Message</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="contactsTableBody">
+                            <!-- Populated dynamically -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <!-- Modal for Viewing Message Details -->
+    <div class="modal-overlay" id="viewModal">
+        <div class="modal">
+            <div class="modal-header">
+                <h3>Message Details</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="detail-group">
+                    <label>Date Submitted:</label>
+                    <p id="modalDate"></p>
+                </div>
+                <div class="detail-group">
+                    <label>Name:</label>
+                    <p id="modalName"></p>
+                </div>
+                <div class="detail-group">
+                    <label>Mobile Number:</label>
+                    <p id="modalPhone"></p>
+                </div>
+                <div class="detail-group">
+                    <label>Subject:</label>
+                    <p id="modalSubject"></p>
+                </div>
+                <div class="detail-group">
+                    <label>Message Content:</label>
+                    <p id="modalMessage"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dashboard Scripts -->
+    <script src="assets/js/dashboard.js"></script>
+</body>
+</html>
