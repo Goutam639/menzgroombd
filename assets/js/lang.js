@@ -39,12 +39,62 @@ const translations = [
     { selector: ".service-card:nth-child(4) p", en: "Rejuvenating facial treatments and massages to relieve stress and clear your skin.", bn: "মানসিক চাপ কমাতে এবং ত্বক পরিষ্কার করতে আরামদায়ক ফেসিয়াল।" },
     { selector: ".service-link", en: "Book Service <i class=\"fas fa-arrow-right\"></i>", bn: "বুক সার্ভিস <i class=\"fas fa-arrow-right\"></i>" },
 
-    // Pricing Preview (index.html)
-    { selector: ".pricing .subtitle", en: "Our Top Prices", bn: "আমাদের সেরা মূল্য" },
-    { selector: ".pricing .section-title h2", en: "Grooming Packages", bn: "গ্রুমিং প্যাকেজ" },
-    { selector: ".pricing .btn-outline", en: "View Full Menu", bn: "সম্পূর্ণ মেনু দেখুন" },
-    { selector: ".pricing-col:nth-child(1) .pricing-title", en: "<i class=\"fas fa-scissors text-gold\"></i> For Hair", bn: "<i class=\"fas fa-scissors text-gold\"></i> চুলের জন্য" },
-    { selector: ".pricing-col:nth-child(2) .pricing-title", en: "<i class=\"fas fa-user-tie text-gold\"></i> For Beard", bn: "<i class=\"fas fa-user-tie text-gold\"></i> দাড়ির জন্য" },
+    // Full Pricing Section (index.html)
+    { selector: ".pricing .subtitle", en: "Our Menu", bn: "আমাদের মেনু" },
+    { selector: ".pricing .section-title h2", en: "Full Grooming Packages", bn: "সম্পূর্ণ গ্রুমিং প্যাকেজ" },
+    { selector: ".pricing .menu-category:nth-child(2) .pricing-title", en: "<i class=\"fas fa-scissors text-gold\"></i> Hair Services", bn: "<i class=\"fas fa-scissors text-gold\"></i> চুলের সেবাসমূহ" },
+    // Hair List 1
+    { selector: ".pricing .menu-category:nth-child(2) .pricing-list:nth-child(1) .pricing-item:nth-child(1) h4", en: "Classic Haircut", bn: "ক্লাসিক হেয়ারকাট" },
+    { selector: ".pricing .menu-category:nth-child(2) .pricing-list:nth-child(1) .pricing-item:nth-child(1) p", en: "Standard cut, wash & style", bn: "সাধারণ কাট, ওয়াশ এবং স্টাইল" },
+    { selector: ".pricing .menu-category:nth-child(2) .pricing-list:nth-child(1) .pricing-item:nth-child(2) h4", en: "Premium Skin Fade", bn: "প্রিমিয়াম স্কিন ফেড" },
+    { selector: ".pricing .menu-category:nth-child(2) .pricing-list:nth-child(1) .pricing-item:nth-child(2) p", en: "Zero fade with razor finish & hot towel", bn: "রেজর ফিনিশ এবং হট টাওয়েল সহ জিরো ফেড" },
+    { selector: ".pricing .menu-category:nth-child(2) .pricing-list:nth-child(1) .pricing-item:nth-child(3) h4", en: "Restyle / Scissor Cut", bn: "রিস্টাইল / কাঁচি কাট" },
+    { selector: ".pricing .menu-category:nth-child(2) .pricing-list:nth-child(1) .pricing-item:nth-child(3) p", en: "Complete transformation for long hair", bn: "লম্বা চুলের জন্য সম্পূর্ণ রূপান্তর" },
+    // Hair List 2
+    { selector: ".pricing .menu-category:nth-child(2) .pricing-list:nth-child(2) .pricing-item:nth-child(1) h4", en: "Hair Color / Grey Blending", bn: "হেয়ার কালার / গ্রে ব্লেন্ডিং" },
+    { selector: ".pricing .menu-category:nth-child(2) .pricing-list:nth-child(2) .pricing-item:nth-child(1) p", en: "Natural looking color formulation", bn: "প্রাকৃতিক রঙের মিশ্রণ" },
+    { selector: ".pricing .menu-category:nth-child(2) .pricing-list:nth-child(2) .pricing-item:nth-child(2) h4", en: "Buzz Cut", bn: "বাজ কাট" },
+    { selector: ".pricing .menu-category:nth-child(2) .pricing-list:nth-child(2) .pricing-item:nth-child(2) p", en: "One grade all over with line up", bn: "লাইন আপ সহ সম্পূর্ণ এক গ্রেড" },
+    { selector: ".pricing .menu-category:nth-child(2) .pricing-list:nth-child(2) .pricing-item:nth-child(3) h4", en: "Kids Haircut (Under 12)", bn: "বাচ্চাদের হেয়ারকাট (১২ বছরের কম)" },
+    { selector: ".pricing .menu-category:nth-child(2) .pricing-list:nth-child(2) .pricing-item:nth-child(3) p", en: "Gentle and stylish cut for children", bn: "বাচ্চাদের জন্য কোমল এবং আড়ম্বরপূর্ণ কাট" },
+
+    { selector: ".pricing .menu-category:nth-child(3) .pricing-title", en: "<i class=\"fas fa-user-tie text-gold\"></i> Beard & Shave", bn: "<i class=\"fas fa-user-tie text-gold\"></i> দাড়ি এবং শেভ" },
+    // Beard List 1
+    { selector: ".pricing .menu-category:nth-child(3) .pricing-list:nth-child(1) .pricing-item:nth-child(1) h4", en: "Beard Trim & Shape", bn: "দাড়ি ছাঁটাই এবং শেপিং" },
+    { selector: ".pricing .menu-category:nth-child(3) .pricing-list:nth-child(1) .pricing-item:nth-child(1) p", en: "Clipper and scissor work, shaping", bn: "ক্লিপার এবং কাঁচির কাজ, শেপিং" },
+    { selector: ".pricing .menu-category:nth-child(3) .pricing-list:nth-child(1) .pricing-item:nth-child(2) h4", en: "Luxury Hot Towel Shave", bn: "লাক্সারি হট টাওয়েল শেভ" },
+    { selector: ".pricing .menu-category:nth-child(3) .pricing-list:nth-child(1) .pricing-item:nth-child(2) p", en: "Traditional straight razor experience", bn: "ঐতিহ্যবাহী স্ট্রেইট রেজর অভিজ্ঞতা" },
+    // Beard List 2
+    { selector: ".pricing .menu-category:nth-child(3) .pricing-list:nth-child(2) .pricing-item:nth-child(1) h4", en: "Beard Coloring", bn: "দাড়ির কালার" },
+    { selector: ".pricing .menu-category:nth-child(3) .pricing-list:nth-child(2) .pricing-item:nth-child(1) p", en: "Full color or grey blending", bn: "পূর্ণ রঙ বা গ্রে ব্লেন্ডিং" },
+    { selector: ".pricing .menu-category:nth-child(3) .pricing-list:nth-child(2) .pricing-item:nth-child(2) h4", en: "Mustache Trim", bn: "গোঁফ ছাঁটাই" },
+    { selector: ".pricing .menu-category:nth-child(3) .pricing-list:nth-child(2) .pricing-item:nth-child(2) p", en: "Quick cleanup and wax styling", bn: "দ্রুত ক্লিনআপ এবং ওয়াক্স স্টাইলিং" },
+
+    { selector: ".pricing .menu-category:nth-child(4) .pricing-title", en: "<i class=\"fas fa-spa text-gold\"></i> Spa Treatments", bn: "<i class=\"fas fa-spa text-gold\"></i> স্পা ট্রিটমেন্ট" },
+    // Spa List 1
+    { selector: ".pricing .menu-category:nth-child(4) .pricing-list:nth-child(1) .pricing-item:nth-child(1) h4", en: "Signature Men's Facial", bn: "সিগনেচার মেনস ফেসিয়াল" },
+    { selector: ".pricing .menu-category:nth-child(4) .pricing-list:nth-child(1) .pricing-item:nth-child(1) p", en: "Deep cleanse, exfoliation, mask & massage", bn: "ডিপ ক্লিনজ, এক্সফোলিয়েশন, মাস্ক এবং ম্যাসাজ" },
+    { selector: ".pricing .menu-category:nth-child(4) .pricing-list:nth-child(1) .pricing-item:nth-child(2) h4", en: "Scalp Treatment", bn: "স্কাল্প ট্রিটমেন্ট" },
+    { selector: ".pricing .menu-category:nth-child(4) .pricing-list:nth-child(1) .pricing-item:nth-child(2) p", en: "Invigorating scrub and massage for hair health", bn: "চুলের স্বাস্থ্যের জন্য স্ক্রাব এবং ম্যাসাজ" },
+    // Spa List 2
+    { selector: ".pricing .menu-category:nth-child(4) .pricing-list:nth-child(2) .pricing-item:nth-child(1) h4", en: "Express Facial", bn: "এক্সপ্রেস ফেসিয়াল" },
+    { selector: ".pricing .menu-category:nth-child(4) .pricing-list:nth-child(2) .pricing-item:nth-child(1) p", en: "Quick 30-minute refresh", bn: "দ্রুত ৩০-মিনিটের রিফ্রেশ" },
+    { selector: ".pricing .menu-category:nth-child(4) .pricing-list:nth-child(2) .pricing-item:nth-child(2) h4", en: "Waxing (Ears, Nose, Eyebrows)", bn: "ওয়াক্সিং (কান, নাক, ভ্রু)" },
+    { selector: ".pricing .menu-category:nth-child(4) .pricing-list:nth-child(2) .pricing-item:nth-child(2) p", en: "Per area cleanup", bn: "প্রতি এলাকায় ক্লিনআপ" },
+
+    { selector: ".pricing .menu-category:nth-child(5) .pricing-title", en: "<i class=\"fas fa-crown text-gold\"></i> Signature Packages", bn: "<i class=\"fas fa-crown text-gold\"></i> সিগনেচার প্যাকেজ" },
+    // Packages List 1
+    { selector: ".pricing .menu-category:nth-child(5) .pricing-list:nth-child(1) .pricing-item:nth-child(1) h4", en: "The Gentleman", bn: "দ্য জেন্টলম্যান" },
+    { selector: ".pricing .menu-category:nth-child(5) .pricing-list:nth-child(1) .pricing-item:nth-child(1) p", en: "Classic Haircut + Beard Trim & Shape", bn: "ক্লাসিক হেয়ারকাট + দাড়ি ছাঁটাই এবং শেপিং" },
+    { selector: ".pricing .menu-category:nth-child(5) .pricing-list:nth-child(1) .pricing-item:nth-child(2) h4", en: "The Executive", bn: "দ্য এক্সিকিউটিভ" },
+    { selector: ".pricing .menu-category:nth-child(5) .pricing-list:nth-child(1) .pricing-item:nth-child(2) p", en: "Premium Fade + Luxury Hot Towel Shave", bn: "প্রিমিয়াম ফেড + লাক্সারি হট টাওয়েল শেভ" },
+    // Packages List 2
+    { selector: ".pricing .menu-category:nth-child(5) .pricing-list:nth-child(2) .pricing-item:nth-child(1) h4", en: "The Royal Treatment", bn: "দ্য রয়্যাল ট্রিটমেন্ট" },
+    { selector: ".pricing .menu-category:nth-child(5) .pricing-list:nth-child(2) .pricing-item:nth-child(1) p", en: "Haircut, Hot Towel Shave, Mini Facial & Scalp Massage", bn: "হেয়ারকাট, হট টাওয়েল শেভ, মিনি ফেসিয়াল এবং স্কাল্প ম্যাসাজ" },
+    { selector: ".pricing .menu-category:nth-child(5) .pricing-list:nth-child(2) .pricing-item:nth-child(2) h4", en: "Groom's Special", bn: "গ্রুমস স্পেশাল" },
+    { selector: ".pricing .menu-category:nth-child(5) .pricing-list:nth-child(2) .pricing-item:nth-child(2) p", en: "Complete styling, shave, facial & complimentary beverage", bn: "সম্পূর্ণ স্টাইলিং, শেভ, ফেসিয়াল এবং কমপ্লিমেন্টারি পানীয়" },
+
+    { selector: ".pricing .btn-primary", en: "Book Your Appointment Now", bn: "এখনই আপনার অ্যাপয়েন্টমেন্ট বুক করুন" },
 
     // Testimonials
     { selector: ".testimonials .subtitle", en: "Testimonials", bn: "গ্রাহক রিভিউ" },
@@ -73,14 +123,7 @@ const translations = [
     { selector: ".hours-list li:nth-child(3) span:nth-child(2)", en: "Closed", bn: "বন্ধ" },
     { selector: ".footer-col:nth-child(4) h3", en: "Facebook", bn: "ফেসবুক" },
 
-    // Menu specific (menu.html)
-    { selector: ".page-banner h1", en: "Our Full Menu", bn: "আমাদের সম্পূর্ণ মেনু" },
-    { selector: ".breadcrumb", en: "<a href=\"index.html\">Home</a> <i class=\"fas fa-chevron-right text-muted mx-2\" style=\"font-size: 0.7rem; margin: 0 10px;\"></i> Menu", bn: "<a href=\"index.html\">হোম</a> <i class=\"fas fa-chevron-right text-muted mx-2\" style=\"font-size: 0.7rem; margin: 0 10px;\"></i> মেনু" },
-    { selector: ".full-menu-section .menu-category:nth-child(1) .pricing-title", en: "<i class=\"fas fa-scissors text-gold\"></i> Hair Services", bn: "<i class=\"fas fa-scissors text-gold\"></i> চুলের সেবাসমূহ" },
-    { selector: ".full-menu-section .menu-category:nth-child(2) .pricing-title", en: "<i class=\"fas fa-user-tie text-gold\"></i> Beard & Shave", bn: "<i class=\"fas fa-user-tie text-gold\"></i> দাড়ি এবং শেভ" },
-    { selector: ".full-menu-section .menu-category:nth-child(3) .pricing-title", en: "<i class=\"fas fa-spa text-gold\"></i> Spa Treatments", bn: "<i class=\"fas fa-spa text-gold\"></i> স্পা ট্রিটমেন্ট" },
-    { selector: ".full-menu-section .menu-category:nth-child(4) .pricing-title", en: "<i class=\"fas fa-crown text-gold\"></i> Signature Packages", bn: "<i class=\"fas fa-crown text-gold\"></i> সিগনেচার প্যাকেজ" },
-    { selector: ".full-menu-section .btn-primary:not(#btn_login)", en: "Book Your Appointment Now", bn: "এখনই আপনার অ্যাপয়েন্টমেন্ট বুক করুন" },
+    // Removed obsolete menu.html specific translations
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
