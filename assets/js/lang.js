@@ -11,7 +11,7 @@ const translations = [
     // Hero Section (index.html)
     { selector: ".hero .sub-heading", en: "Premium Grooming Experience", bn: "প্রিমিয়াম গ্রুমিং অভিজ্ঞতা" },
     { selector: ".hero .main-heading", en: "Welcome to <br> <span class=\"text-gold\">MENZ GROOM Premium SALON & SPA.</span>", bn: "মেনজ গ্রুম প্রিমিয়াম সেলুন এন্ড স্পা <br><span class=\"text-gold\">-তে আপনাকে স্বাগতম।</span>" },
-    { selector: ".hero-desc", en: "Achieve your dream style with our master barbers. Experience the finest grooming and spa services tailored exclusively for the modern man.", bn: "আমাদের মাস্টার নাপিতদের সাথে আপনার স্বপ্নের হেয়ারস্টাইল অর্জন করুন। আধুনিক পুরুষদের জন্য সেরা গ্রুমিং এবং স্পা সেবার অভিজ্ঞতা নিন।" },
+    { selector: ".hero-desc", en: "Achieve your dream style with our master barbers. Experience the finest grooming and spa services tailored exclusively for the modern man.", bn: "আমাদের মাস্টার হেয়ার ষ্টাইলারদের সাথে আপনার স্বপ্নের হেয়ারস্টাইল অর্জন করুন। আধুনিক পুরুষদের জন্য সেরা গ্রুমিং এবং স্পা সেবার অভিজ্ঞতা নিন।" },
     { selector: ".hero-buttons a.btn-primary", en: "Book Appointment", bn: "অ্যাপয়েন্টমেন্ট বুক করুন" },
     { selector: ".hero-buttons a.btn-outline", en: "Explore Services", bn: "সেবাগুলো দেখুন" },
 
@@ -161,13 +161,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const contactName = document.getElementById("contactName");
         if (contactName) contactName.placeholder = (lang === "en") ? "Your Name" : "আপনার নাম";
-        
+
         const contactPhone = document.getElementById("contactPhone");
         if (contactPhone) contactPhone.placeholder = (lang === "en") ? "Mobile Number" : "আপনার মোবাইল নম্বর";
-        
+
         const contactSubject = document.getElementById("contactSubject");
         if (contactSubject) contactSubject.placeholder = (lang === "en") ? "Subject" : "বিষয়";
-        
+
         const contactMessage = document.getElementById("contactMessage");
         if (contactMessage) contactMessage.placeholder = (lang === "en") ? "Your Message" : "আপনার বার্তা";
     }
