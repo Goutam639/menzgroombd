@@ -10,7 +10,7 @@ const translations = [
 
     // Hero Section (index.html)
     { selector: ".hero .sub-heading", en: "Premium Grooming Experience", bn: "প্রিমিয়াম গ্রুমিং অভিজ্ঞতা" },
-    { selector: ".hero .main-heading", en: "Welcome to <br> <span class=\"text-gold\">MENZ GROOM Premium SALON & SPA.</span>", bn: "মেনজ গ্রুম প্রিমিয়াম সেলুন এন্ড স্পা <br><span class=\"text-gold\">-তে আপনাকে স্বাগতম।</span>" },
+    { selector: ".hero .main-heading", en: "Welcome to <br> <span class=\"text-gold\">MENZ GROOM Premium SALON & SPA.</span>", bn: "মেনজ গ্রুম প্রিমিয়াম সেলুন এন্ড স্পা <br><span class=\"text-gold\">-তে আপনাকে আমন্ত্রন।</span>" },
     { selector: ".hero-desc", en: "Achieve your dream style with our master barbers. Experience the finest grooming and spa services tailored exclusively for the modern man.", bn: "আমাদের মাস্টার হেয়ার ষ্টাইলারদের সাথে আপনার স্বপ্নের হেয়ারস্টাইল অর্জন করুন। আধুনিক পুরুষদের জন্য সেরা গ্রুমিং এবং স্পা সেবার অভিজ্ঞতা নিন।" },
     { selector: ".hero-buttons a.btn-primary", en: "Book Appointment", bn: "অ্যাপয়েন্টমেন্ট বুক করুন" },
     { selector: ".hero-buttons a.btn-outline", en: "Explore Services", bn: "সেবাগুলো দেখুন" },
@@ -29,14 +29,22 @@ const translations = [
     // Services Section (index.html)
     { selector: ".services .subtitle", en: "What We Offer", bn: "আমাদের সেবাসমূহ" },
     { selector: ".services .section-title h2", en: "Premium Services", bn: "প্রিমিয়াম সার্ভিস" },
-    { selector: ".service-card:nth-child(1) h3", en: "Stylish Hair Cut", bn: "স্টাইলিশ হেয়ার কাট" },
+    { selector: ".service-card:nth-child(1) h3", en: "Hair Cut & Shaving", bn: "হেয়ার কাট এবং শেভিং" },
     { selector: ".service-card:nth-child(1) p", en: "Precision cuts tailored to your face shape and personal style by our master barbers.", bn: "আপনার চেহারার সাথে মানানসই নিখুঁত হেয়ারকাট।" },
-    { selector: ".service-card:nth-child(2) h3", en: "Color & Hair Wash", bn: "হেয়ার কালার এবং ওয়াশ" },
+    { selector: ".service-card:nth-child(2) h3", en: "Hair Color & Shining", bn: "হেয়ার কালার এবং শাইনিং" },
     { selector: ".service-card:nth-child(2) p", en: "Revitalizing scalp massages and professional coloring tailored for men's hair.", bn: "মাথার ত্বক ম্যাসাজ এবং পুরুষদের চুলের জন্য প্রফেশনাল হেয়ার কালার।" },
-    { selector: ".service-card:nth-child(3) h3", en: "Beard Grooming", bn: "দাড়ির যত্ন" },
-    { selector: ".service-card:nth-child(3) p", en: "Expert beard trimming, shaping, and conditioning with premium oils and balms.", bn: "প্রিমিয়াম তেল এবং বাম দিয়ে দাড়ির সঠিক ট্রিমিং এবং শেপিং।" },
-    { selector: ".service-card:nth-child(4) h3", en: "Facial & Spa", bn: "ফেসিয়াল এবং স্পা" },
+    { selector: ".service-card:nth-child(3) h3", en: "Hair Treatment & Rebonding", bn: "হেয়ার ট্রিটমেন্ট এবং রিবন্ডিং" },
+    { selector: ".service-card:nth-child(3) p", en: "Restore the health and shine of your hair with our advanced treatments.", bn: "আমাদের উন্নত ট্রিটমেন্টের মাধ্যমে আপনার চুলের স্বাস্থ্য এবং ঔজ্জ্বল্য ফিরিয়ে আনুন।" },
+    { selector: ".service-card:nth-child(4) h3", en: "Facial", bn: "ফেসিয়াল" },
     { selector: ".service-card:nth-child(4) p", en: "Rejuvenating facial treatments and massages to relieve stress and clear your skin.", bn: "মানসিক চাপ কমাতে এবং ত্বক পরিষ্কার করতে আরামদায়ক ফেসিয়াল।" },
+    { selector: ".service-card:nth-child(5) h3", en: "Spa Services", bn: "স্পা সার্ভিস" },
+    { selector: ".service-card:nth-child(5) p", en: "Relaxing spa experiences designed to rejuvenate your body and mind.", bn: "আপনার শরীর ও মনকে সতেজ করতে আরামদায়ক স্পা অভিজ্ঞতা।" },
+    { selector: ".service-card:nth-child(6) h3", en: "Groom Makeup & Attires", bn: "বর মেকআপ এবং পোশাক" },
+    { selector: ".service-card:nth-child(6) p", en: "Complete grooming and styling services for your special day.", bn: "আপনার বিশেষ দিনের জন্য সম্পূর্ণ গ্রুমিং এবং স্টাইলিং পরিষেবা।" },
+    { selector: ".service-card:nth-child(7) h3", en: "Tattoo & Other Services", bn: "ট্যাটু এবং অন্যান্য সেবাসমূহ" },
+    { selector: ".service-card:nth-child(7) p", en: "Custom tattoos and additional premium grooming services.", bn: "কাস্টম ট্যাটু এবং অন্যান্য প্রিমিয়াম গ্রুমিং পরিষেবা।" },
+    { selector: ".service-card:nth-child(8) h3", en: "Packages", bn: "প্যাকেজসমূহ" },
+    { selector: ".service-card:nth-child(8) p", en: "Exclusive grooming packages offering a complete premium experience.", bn: "একচেটিয়া গ্রুমিং প্যাকেজ যা সম্পূর্ণ প্রিমিয়াম অভিজ্ঞতা প্রদান করে।" },
     { selector: ".service-link", en: "Book Service <i class=\"fas fa-arrow-right\"></i>", bn: "বুক সার্ভিস <i class=\"fas fa-arrow-right\"></i>" },
 
     // Full Pricing Section (index.html)
