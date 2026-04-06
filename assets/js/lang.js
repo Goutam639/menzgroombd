@@ -10,7 +10,7 @@ const translations = [
 
     // Hero Section (index.html)
     { selector: ".hero .sub-heading", en: "Premium Grooming Experience", bn: "প্রিমিয়াম গ্রুমিং অভিজ্ঞতা" },
-    { selector: ".hero .main-heading", en: "Welcome to <br> <span class=\"text-gold\">MENZ GROOM Premium SALON & SPA.</span>", bn: "মেনজ গ্রুম প্রিমিয়াম সেলুন এন্ড স্পা <br><span class=\"text-gold\">-তে আপনাকে আমন্ত্রন।</span>" },
+    { selector: ".hero .main-heading", en: "Welcome to <br> <span class=\"text-gold\">MENZ GROOM Premium SALON & SPA.</span>", bn: "মেনজ গ্রুম প্রিমিয়াম সেলুন এন্ড স্পা <br><span class=\"text-gold\">-তে আপনাকে স্বাগতম।</span>" },
     { selector: ".hero-desc", en: "Achieve your dream style with our master barbers. Experience the finest grooming and spa services tailored exclusively for the modern man.", bn: "আমাদের মাস্টার হেয়ার ষ্টাইলারদের সাথে আপনার স্বপ্নের হেয়ারস্টাইল অর্জন করুন। আধুনিক পুরুষদের জন্য সেরা গ্রুমিং এবং স্পা সেবার অভিজ্ঞতা নিন।" },
     { selector: ".hero-buttons a.btn-primary", en: "Book Appointment", bn: "অ্যাপয়েন্টমেন্ট বুক করুন" },
     { selector: ".hero-buttons a.btn-outline", en: "Explore Services", bn: "সেবাগুলো দেখুন" },
@@ -44,7 +44,7 @@ const translations = [
     { selector: ".service-card:nth-child(7) h3", en: "Tattoo & Other Services", bn: "ট্যাটু এবং অন্যান্য সেবাসমূহ" },
     { selector: ".service-card:nth-child(7) p", en: "Custom tattoos and additional premium grooming services.", bn: "কাস্টম ট্যাটু এবং অন্যান্য প্রিমিয়াম গ্রুমিং পরিষেবা।" },
     { selector: ".service-card:nth-child(8) h3", en: "Packages", bn: "প্যাকেজসমূহ" },
-    { selector: ".service-card:nth-child(8) p", en: "Exclusive grooming packages offering a complete premium experience.", bn: "একচেটিয়া গ্রুমিং প্যাকেজ যা সম্পূর্ণ প্রিমিয়াম অভিজ্ঞতা প্রদান করে।" },
+    { selector: ".service-card:nth-child(8) p", en: "Exclusive grooming packages offering a complete premium experience.", bn: "অনন্য গ্রুমিং প্যাকেজ যা সম্পূর্ণ প্রিমিয়াম অভিজ্ঞতা প্রদান করে।" },
     { selector: ".service-link", en: "Book Service <i class=\"fas fa-arrow-right\"></i>", bn: "বুক সার্ভিস <i class=\"fas fa-arrow-right\"></i>" },
 
     // Full Pricing Section (index.html)
