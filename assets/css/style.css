@@ -1487,6 +1487,12 @@ textarea.form-control {
     }
 }
 
+@media (max-width: 768px) {
+    .hide-on-mobile {
+        display: none !important;
+    }
+}
+
 @media (max-width: 480px) {
     .services-grid {
         grid-template-columns: 1fr;
