@@ -281,7 +281,7 @@ img {
 }
 
 .logo-img {
-    height: 52px;
+    height: 90px;
     width: auto;
     object-fit: contain;
     transition: opacity var(--transition-normal), filter var(--transition-normal);
@@ -1015,8 +1015,8 @@ img {
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr;
-    gap: 40px;
+    grid-template-columns: 1.25fr 1.25fr 1fr;
+    gap: 80px;
     margin-bottom: 60px;
 }
 
