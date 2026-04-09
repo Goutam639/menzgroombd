@@ -341,6 +341,72 @@ const t = {
     store_closed_day2: {
         en: "Saturday Closed",
         bn: "শনিবার বন্ধ"
+    },
+
+    /* ── Privacy Policy ──────────────────────────────────────────────── */
+    footer_privacy: {
+        en: "Privacy Policy",
+        bn: "গোপনীয়তা নীতিমালা"
+    },
+    privacy_title: {
+        en: "Privacy & Policy",
+        bn: "গোপনীয়তা এবং নীতিমালা"
+    },
+    privacy_intro: {
+        en: "At Menz Groom Premium Salon & Spa, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your personal information when you visit our website.",
+        bn: "মেঞ্জ গ্রুম প্রিমিয়াম স্যালন অ্যান্ড স্পা-তে আমরা আপনার গোপনীয়তা রক্ষা করতে প্রতিশ্রুতিবদ্ধ। এই গোপনীয়তা নীতিমালা ব্যাখ্যা করে যে আপনি যখন আমাদের ওয়েবসাইট ব্যবহার করেন তখন আমরা কীভাবে আপনার ব্যক্তিগত তথ্য সংগ্রহ করি, ব্যবহার করি এবং সুরক্ষিত রাখি।"
+    },
+    privacy_sect1_title: {
+        en: "1. Information We Collect",
+        bn: "১. আমরা যে তথ্য সংগ্রহ করি"
+    },
+    privacy_sect1_p: {
+        en: "We may collect personal information such as your name, mobile number, and email address when you book an appointment, fill out a contact form, or use our login services.",
+        bn: "আপনি যখন অ্যাপয়েন্টমেন্ট বুক করেন, আমাদের কন্টাক্ট ফরম পূরণ করেন বা আমাদের লগইন পরিষেবাগুলি ব্যবহার করেন তখন আমরা আপনার নাম, মোবাইল নম্বর এবং ইমেল ঠিকানার মতো ব্যক্তিগত তথ্য সংগ্রহ করতে পারি।"
+    },
+    privacy_sect2_title: {
+        en: "2. How We Use Your Information",
+        bn: "২. আমরা কীভাবে আপনার তথ্য ব্যবহার করি"
+    },
+    privacy_sect2_p: {
+        en: "We use your information to manage your appointments, respond to your inquiries, improve our grooming services, and provide you with a more personalized experience.",
+        bn: "আমরা আপনার তথ্যগুলি অ্যাপয়েন্টমেন্ট ম্যানেজমেন্ট, আপনার জিজ্ঞাসার উত্তর প্রদান, আমাদের গ্রুমিং পরিষেবাগুলির মান উন্নয়ন এবং আপনাকে আরও ব্যক্তিগত অভিজ্ঞতা প্রদানের জন্য ব্যবহার করি।"
+    },
+    privacy_sect3_title: {
+        en: "3. Data Security",
+        bn: "৩. ডেটা নিরাপত্তা"
+    },
+    privacy_sect3_p: {
+        en: "We implement appropriate security measures to protect your personal information from unauthorized access, alteration, or disclosure.",
+        bn: "আমরা আপনার ব্যক্তিগত তথ্য অননুমোদিত অ্যাক্সেস, পরিবর্তন বা প্রকাশ থেকে রক্ষা করার জন্য উপযুক্ত নিরাপত্তা ব্যবস্থা গ্রহণ করি।"
+    },
+    privacy_sect4_title: {
+        en: "4. Third-Party Services",
+        bn: "৪. থার্ড-পার্টি পরিষেবা"
+    },
+    privacy_sect4_p: {
+        en: "Our website may use third-party services like Google Analytics and Facebook Plugins to improve user experience. These services may collect information in accordance with their own privacy policies.",
+        bn: "আমাদের ওয়েবসাইট ব্যবহারকারীর অভিজ্ঞতা উন্নত করতে গুগল অ্যানালিটিক্স এবং ফেসবুক প্লাগইনগুলির মতো থার্ড-পার্টি পরিষেবা ব্যবহার করতে পারে। এই পরিষেবাগুলি তাদের নিজস্ব গোপনীয়তা নীতিমালা অনুযায়ী তথ্য সংগ্রহ করতে পারে।"
+    },
+    privacy_sect5_title: {
+        en: "5. Cookies",
+        bn: "৫. কুকিজ"
+    },
+    privacy_sect5_p: {
+        en: "We use cookies to enhance your browsing experience and analyze website traffic. You can choose to disable cookies through your browser settings.",
+        bn: "আমরা আপনার ব্রাউজিং অভিজ্ঞতা উন্নত করতে এবং ওয়েবসাইট ট্র্যাফিক বিশ্লেষণ করতে কুকিজ ব্যবহার করি। আপনি চাইলে আপনার ব্রাউজার সেটিংসের মাধ্যমে কুকিজ নিষ্ক্রিয় করতে পারেন।"
+    },
+    privacy_sect6_title: {
+        en: "6. Updates to Policy",
+        bn: "৬. নীতিমালার পরিবর্তন"
+    },
+    privacy_sect6_p: {
+        en: "We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated revision date.",
+        bn: "আমরা সময়ে সময়ে এই গোপনীয়তা নীতিমালা আপডেট করতে পারি। যে কোনও পরিবর্তন এই পৃষ্ঠায় নতুন ডেট সহ পোস্ট করা হবে।"
+    },
+    privacy_contact: {
+        en: "If you have any questions about our Privacy Policy, please contact us at:",
+        bn: "আমাদের গোপনীয়তা নীতিমালা সম্পর্কে আপনার কোনও প্রশ্ন থাকলে, দয়া করে আমাদের সাথে যোগাযোগ করুন:"
     }
 };
 
