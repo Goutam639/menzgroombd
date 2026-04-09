@@ -729,8 +729,8 @@ img {
     font-family: var(--font-body);
     font-size: 1.2rem;
     font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    text-transform: none;
+    letter-spacing: normal;
     transition: color var(--transition-fast);
 }
 
@@ -1389,6 +1389,41 @@ textarea.form-control {
 }
 
 
+/* ==========================================================================
+   Back to Top Button
+   ========================================================================== */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    background-color: var(--color-gold);
+    color: var(--bg-dark);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 20;
+    transition: all var(--transition-normal);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    background-color: var(--text-white);
+    color: var(--bg-darker);
+    transform: translateY(-3px);
+}
 
 /* ==========================================================================
    Responsive Design
