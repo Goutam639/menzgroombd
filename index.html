@@ -62,14 +62,16 @@
 
             <nav class="navbar" id="navbar">
                 <ul class="nav-list">
-                    <li><a href="#home" class="nav-link active">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#services" class="nav-link">Services</a></li>
-                    <li><a href="#pricing" class="nav-link">Pricing</a></li>
-                    <li><a href="#testimonials" class="nav-link">Reviews</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#home" class="nav-link active" data-i18n="nav_home">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-i18n="nav_about">About</a></li>
+                    <li><a href="#services" class="nav-link" data-i18n="nav_services">Services</a></li>
+                    <li><a href="#pricing" class="nav-link" data-i18n="nav_pricing">Pricing</a></li>
+                    <li><a href="#testimonials" class="nav-link" data-i18n="nav_reviews">Reviews</a></li>
+                    <li><a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a></li>
                 </ul>
             </nav>
+
+            <!-- Language Switcher -->
 
             <div class="nav-actions">
                 <div class="lang-switch">
@@ -77,7 +79,9 @@
                     <span class="lang-divider">|</span>
                     <button class="lang-btn" data-lang="bn">বাংলা</button>
                 </div>
-                <a href="login.html" class="btn btn-primary btn-login hide-on-mobile" id="btn_login">Log in</a>
+
+                <a href="login.html" class="btn btn-primary btn-login hide-on-mobile" id="btn_login"
+                    data-i18n="nav_login">Log in</a>
                 <div class="mobile-menu-toggle" id="mobile-menu">
                     <i class="fas fa-bars"></i>
                 </div>
@@ -90,17 +94,16 @@
         <div class="hero-overlay"></div>
         <div class="container hero-container">
             <div class="hero-content fade-in-up">
-                <h2 class="sub-heading">Premium Grooming Experience</h2>
-                <h1 class="main-heading">Welcome To <br><span class="text-gold">Menz Groom Premium Salon & Spa</span>
+                <h2 class="sub-heading" data-i18n="hero_sub">Premium Grooming Experience</h2>
+                <h1 class="main-heading" data-i18n-html="hero_main">Welcome To <br><span class="text-gold">Menz Groom
+                        Premium Salon & Spa</span>
                 </h1>
-                <p class="hero-desc">Achieve your dream style with our master barbers.<br> Experience the finest
-                    grooming
-                    and spa services tailored exclusively for the modern man.</p>
+                <p class="hero-desc" data-i18n-html="hero_desc">Achieve your dream style with our master barbers.<br>
+                    Experience the finest grooming and spa services tailored exclusively for the modern man.</p>
                 <div class="hero-buttons">
-                    <a href="https://api.whatsapp.com/send?phone=8801349049227" class="btn btn-primary"
-                        target="_blank">Book
-                        Appointment</a>
-                    <a href="#services" class="btn btn-outline">Explore Services</a>
+                    <a href="https://api.whatsapp.com/send?phone=8801349049227" class="btn btn-primary" target="_blank"
+                        data-i18n="hero_btn_book">Book Appointment</a>
+                    <a href="#services" class="btn btn-outline" data-i18n="hero_btn_explore">Explore Services</a>
                 </div>
             </div>
         </div>
@@ -120,45 +123,49 @@
                 <div class="about-img-container" id="about-img-container">
                     <div class="experience-badge">
                         <span class="years">5+</span>
-                        <span class="text">Years of<br>Excellence</span>
+                        <span class="text" data-i18n-html="about_badge">Years of<br>Excellence</span>
                     </div>
                 </div>
             </div>
             <div class="about-content reveal-right">
                 <div class="section-title">
-                    <span class="subtitle">Our Journey</span>
-                    <h2>From Vision to Elegance</h2>
+                    <span class="subtitle" data-i18n="about_sub">Our Journey</span>
+                    <h2 data-i18n="about_h2">From Vision to Elegance</h2>
                 </div>
-                <p style="text-align: justify;">Welcome to our premium salon and spa, where luxury meets care. As the
-                    owner, I ensure exceptional service, expert care, and a relaxing experience. Our dedicated team is
-                    here to enhance your beauty and well-being with personalized attention and
+                <p style="text-align: justify;" data-i18n="about_p1">Welcome to our premium salon and spa, where luxury
+                    meets care. As the owner, I ensure exceptional service, expert care, and a relaxing experience. Our
+                    dedicated team is here to enhance your beauty and well-being with personalized attention and
                     professionalism.</p>
-                <p><b>Md. Rajib Khan</b><br><span style="font-size: 14px;">Founder, Menz Groom Premium Salon & Spa</p>
+                <p><b data-i18n="about_author">Md. Rajib Khan</b><br>
+                    <span data-i18n="about_desig" style="font-size: 14px;">Founder, Menz Groom Premium Salon &
+                        Spa</span>
+                </p>
 
-                <p style="text-align: justify;">Welcome to our premium salon and spa. As co-owner, I am delighted to
-                    ensure you receive exceptional
-                    service in a relaxing, luxurious environment. Our skilled team is dedicated to your beauty, comfort,
-                    and satisfaction, making every visit a truly memorable experience.</p>
-                <p><b>Jibon Robidas</b><br><span style="font-size: 14px;">Co-Founder, Menz Groom Premium Salon &
+                <p style="text-align: justify;" data-i18n="about_p2">Welcome to our premium salon and spa. As co-owner,
+                    I am delighted to ensure you receive exceptional service in a relaxing, luxurious environment. Our
+                    skilled team is dedicated to your beauty, comfort, and satisfaction, making every visit a truly
+                    memorable experience.</p>
+                <p><b data-i18n="about_author2">Jibon Robidas</b><br>
+                    <span data-i18n="about_desig2" style="font-size: 14px;">Co-Founder, Menz Groom Premium Salon &
                         Spa</span>
                 </p>
 
                 <div class="features-list">
                     <div class="feature-item">
                         <i class="fas fa-check-circle text-gold"></i>
-                        <span>Master Barbers</span>
+                        <span data-i18n="about_feat1">Master Barbers</span>
 
                         <div class="feature-item">
                             <i class="fas fa-check-circle text-gold"></i>
-                            <span>Premium Products</span>
+                            <span data-i18n="about_feat2">Premium Products</span>
                         </div>
                         <div class="feature-item">
                             <i class="fas fa-check-circle text-gold"></i>
-                            <span>Luxury Ambience</span>
+                            <span data-i18n="about_feat3">Luxury Ambience</span>
                         </div>
                     </div>
                     <a href="https://api.whatsapp.com/send?phone=8801349049227" class="btn btn-primary mt-30"
-                        target="_blank">We are just a call away!</a>
+                        target="_blank" data-i18n="about_btn">We are just a call away!</a>
                 </div>
             </div>
     </section>
@@ -167,8 +174,8 @@
     <section class="services section-padding bg-darker" id="services">
         <div class="container">
             <div class="section-title text-center reveal-up">
-                <span class="subtitle">What We Offer</span>
-                <h2>Our Premium Services</h2>
+                <span class="subtitle" data-i18n="svc_sub">What We Offer</span>
+                <h2 data-i18n="svc_h2">Our Premium Services</h2>
             </div>
 
             <div class="services-grid">
@@ -177,9 +184,11 @@
                     <div class="service-icon">
                         <i class="fas fa-cut"></i>
                     </div>
-                    <h3>Hair Cut & Shaving</h3>
-                    <p>Precision cuts tailored to your face shape and personal style by our master barbers.</p>
-                    <a href="#pricing" class="service-link">See Details <i class="fas fa-arrow-right"></i></a>
+                    <h3 data-i18n="svc1_h3">Hair Cut & Shaving</h3>
+                    <p data-i18n="svc1_p">Precision cuts tailored to your face shape and personal style by our master
+                        barbers.</p>
+                    <a href="#pricing" class="service-link" data-i18n-html="svc_link">See Details <i
+                            class="fas fa-arrow-right"></i></a>
                 </div>
 
                 <!-- Service 2 -->
@@ -188,9 +197,10 @@
                         <i class="fas fa-spray-can"></i>
                     </div>
                     <div class="service-icon-bg"></div>
-                    <h3>Hair Color & Shining</h3>
-                    <p>Revitalizing scalp massages and professional coloring tailored for men's hair.</p>
-                    <a href="#hair-color-shining" class="service-link">See Details <i
+                    <h3 data-i18n="svc2_h3">Hair Color & Shining</h3>
+                    <p data-i18n="svc2_p">Revitalizing scalp massages and professional coloring tailored for men's hair.
+                    </p>
+                    <a href="#hair-color-shining" class="service-link" data-i18n-html="svc_link">See Details <i
                             class="fas fa-arrow-right"></i></a>
                 </div>
 
@@ -199,9 +209,9 @@
                     <div class="service-icon">
                         <i class="fa-solid fa-anchor"></i>
                     </div>
-                    <h3>Hair Treatment & Rebonding</h3>
-                    <p>Restore the health and shine of your hair with our advanced treatments.</p>
-                    <a href="#hair-treatment-rebonding" class="service-link">See Details <i
+                    <h3 data-i18n="svc3_h3">Hair Treatment & Rebonding</h3>
+                    <p data-i18n="svc3_p">Restore the health and shine of your hair with our advanced treatments.</p>
+                    <a href="#hair-treatment-rebonding" class="service-link" data-i18n-html="svc_link">See Details <i
                             class="fas fa-arrow-right"></i></a>
                 </div>
 
@@ -210,9 +220,11 @@
                     <div class="service-icon">
                         <i class="fa-regular fa-face-smile-beam"></i>
                     </div>
-                    <h3>Facial</h3>
-                    <p>Rejuvenating facial treatments and massages to relieve stress and clear your skin.</p>
-                    <a href="#pricing" class="service-link">See Details <i class="fas fa-arrow-right"></i></a>
+                    <h3 data-i18n="svc4_h3">Facial</h3>
+                    <p data-i18n="svc4_p">Rejuvenating facial treatments and massages to relieve stress and clear your
+                        skin.</p>
+                    <a href="#pricing" class="service-link" data-i18n-html="svc_link">See Details <i
+                            class="fas fa-arrow-right"></i></a>
                 </div>
 
                 <!-- Service 5 -->
@@ -220,9 +232,10 @@
                     <div class="service-icon">
                         <i class="fas fa-spa"></i>
                     </div>
-                    <h3>Spa Services</h3>
-                    <p>Relaxing spa experiences designed to rejuvenate your body and mind.</p>
-                    <a href="#spa-services" class="service-link">See Details <i class="fas fa-arrow-right"></i></a>
+                    <h3 data-i18n="svc5_h3">Spa Services</h3>
+                    <p data-i18n="svc5_p">Relaxing spa experiences designed to rejuvenate your body and mind.</p>
+                    <a href="#spa-services" class="service-link" data-i18n-html="svc_link">See Details <i
+                            class="fas fa-arrow-right"></i></a>
                 </div>
 
                 <!-- Service 6 -->
@@ -230,9 +243,9 @@
                     <div class="service-icon">
                         <i class="fa-solid fa-heart-circle-check"></i>
                     </div>
-                    <h3>Groom Makeup & Attires</h3>
-                    <p>Complete grooming and styling services for your special day.</p>
-                    <a href="#groom-makeup-attire" class="service-link">See Details <i
+                    <h3 data-i18n="svc6_h3">Groom Makeup & Attires</h3>
+                    <p data-i18n="svc6_p">Complete grooming and styling services for your special day.</p>
+                    <a href="#groom-makeup-attire" class="service-link" data-i18n-html="svc_link">See Details <i
                             class="fas fa-arrow-right"></i></a>
                 </div>
 
@@ -241,9 +254,9 @@
                     <div class="service-icon">
                         <i class="fa-solid fa-ankh"></i>
                     </div>
-                    <h3>Tattoo & Other Services</h3>
-                    <p>Custom tattoos and additional premium grooming services.</p>
-                    <a href="#tattoo-other-services" class="service-link">See Details <i
+                    <h3 data-i18n="svc7_h3">Tattoo & Other Services</h3>
+                    <p data-i18n="svc7_p">Custom tattoos and additional premium grooming services.</p>
+                    <a href="#tattoo-other-services" class="service-link" data-i18n-html="svc_link">See Details <i
                             class="fas fa-arrow-right"></i></a>
                 </div>
 
@@ -252,9 +265,10 @@
                     <div class="service-icon">
                         <i class="fa-solid fa-cubes"></i>
                     </div>
-                    <h3>Packages</h3>
-                    <p>Exclusive grooming packages offering a complete premium experience.</p>
-                    <a href="#packages" class="service-link">See Details <i class="fas fa-arrow-right"></i></a>
+                    <h3 data-i18n="svc8_h3">Packages</h3>
+                    <p data-i18n="svc8_p">Exclusive grooming packages offering a complete premium experience.</p>
+                    <a href="#packages" class="service-link" data-i18n-html="svc_link">See Details <i
+                            class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -264,49 +278,49 @@
     <section class="pricing section-padding" id="pricing">
         <div class="container">
             <div class="section-title text-center reveal-up">
-                <span class="subtitle">Our Menu</span>
-                <h2>Our Exclusive Price Offerings</h2>
+                <span class="subtitle" data-i18n="pricing_sub">Our Menu</span>
+                <h2 data-i18n="pricing_h2">Our Exclusive Price Offerings</h2>
             </div>
 
             <!-- Hair Cut & Shaving -->
             <div class="menu-category reveal-up" id="hair-cut-shaving">
-                <div class="pricing-title">
+                <div class="pricing-title" data-i18n-html="hcs_title">
                     <i class="fas fa-scissors text-gold"></i> Hair Cut & Shaving
                 </div>
                 <div class="menu-grid">
                     <div class="pricing-list">
                         <div class="pricing-item">
                             <div class="pricing-info">
-                                <h4>Standard Haircut</h4>
-                                <p>Standard cut, wash & style</p>
+                                <h4 data-i18n="hcs_1_h4">Standard Haircut</h4>
+                                <p data-i18n="hcs_1_p">Standard cut, wash & style</p>
                             </div>
                             <div class="pricing-price">Tk.150</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Gel Shaving</h4>
-                                <p>Smooth glide, irritation-free shaving experience</p>
+                                <h4 data-i18n="hcs_2_h4">Gel Shaving</h4>
+                                <p data-i18n="hcs_2_p">Smooth glide, irritation-free shaving experience</p>
                             </div>
                             <div class="pricing-price">Tk.150</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Style Shaving</h4>
-                                <p>Sharp look with precise shaving style</p>
+                                <h4 data-i18n="hcs_3_h4">Style Shaving</h4>
+                                <p data-i18n="hcs_3_p">Sharp look with precise shaving style</p>
                             </div>
                             <div class="pricing-price">Tk.150</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Catalogue Hair Cut</h4>
-                                <p>Trendy styles from curated haircut catalogue</p>
+                                <h4 data-i18n="hcs_4_h4">Catalogue Hair Cut</h4>
+                                <p data-i18n="hcs_4_p">Trendy styles from curated haircut catalogue</p>
                             </div>
                             <div class="pricing-price">Tk.200</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Fire Hair Cut</h4>
-                                <p>Unique fire styling for bold look</p>
+                                <h4 data-i18n="hcs_5_h4">Fire Hair Cut</h4>
+                                <p data-i18n="hcs_5_p">Unique fire styling for bold look</p>
                             </div>
                             <div class="pricing-price">Tk.500</div>
                         </div>
@@ -315,36 +329,36 @@
                     <div class="pricing-list">
                         <div class="pricing-item">
                             <div class="pricing-info">
-                                <h4>Baby Hair Cut</h4>
-                                <p>Gentle and stylish cut for children</p>
+                                <h4 data-i18n="hcs_6_h4">Baby Hair Cut</h4>
+                                <p data-i18n="hcs_6_p">Gentle and stylish cut for children</p>
                             </div>
                             <div class="pricing-price">Tk.150</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Beard Trimming</h4>
-                                <p>Beard trimming and shaping</p>
+                                <h4 data-i18n="hcs_7_h4">Beard Trimming</h4>
+                                <p data-i18n="hcs_7_p">Beard trimming and shaping</p>
                             </div>
                             <div class="pricing-price">Tk.100</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Hair Shampoo Wash (Regular)</h4>
-                                <p>Regular hair wash with shampoo</p>
+                                <h4 data-i18n="hcs_8_h4">Hair Shampoo Wash (Regular)</h4>
+                                <p data-i18n="hcs_8_p">Regular hair wash with shampoo</p>
                             </div>
                             <div class="pricing-price">Tk.100</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Shampoo & Conditioner with Gel Setting</h4>
-                                <p>Hair wash with conditioner and gel setting</p>
+                                <h4 data-i18n="hcs_9_h4">Shampoo & Conditioner with Gel Setting</h4>
+                                <p data-i18n="hcs_9_p">Hair wash with conditioner and gel setting</p>
                             </div>
                             <div class="pricing-price">Tk.300</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Mango Shaving</h4>
-                                <p>Refreshing shaving experience with mango</p>
+                                <h4 data-i18n="hcs_10_h4">Mango Shaving</h4>
+                                <p data-i18n="hcs_10_p">Refreshing shaving experience with mango</p>
                             </div>
                             <div class="pricing-price">Tk.200</div>
                         </div>
@@ -354,43 +368,43 @@
 
             <!-- Hair Color & Shining -->
             <div class="menu-category reveal-up" id="hair-color-shining">
-                <div class="pricing-title">
+                <div class="pricing-title" data-i18n-html="hco_title">
                     <i class="fas fa-spray-can text-gold"></i> Hair Color & Shining
                 </div>
                 <div class="menu-grid">
                     <div class="pricing-list">
                         <div class="pricing-item">
                             <div class="pricing-info">
-                                <h4>Bigen Hair Shining</h4>
-                                <p>Shine your hair with Bigen Natural Hair Color</p>
+                                <h4 data-i18n="hco_1_h4">Bigen Hair Shining</h4>
+                                <p data-i18n="hco_1_p">Shine your hair with Bigen Natural Hair Color</p>
                             </div>
                             <div class="pricing-price">Tk.850</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Hi-Speed Hair Color</h4>
-                                <p>Hair coloring with Hi-Speed Hair Color</p>
+                                <h4 data-i18n="hco_2_h4">Hi-Speed Hair Color</h4>
+                                <p data-i18n="hco_2_p">Hair coloring with Hi-Speed Hair Color</p>
                             </div>
                             <div class="pricing-price">Tk.550</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Revlon Silk Shining</h4>
-                                <p>Hair coloring with Revlon Silk Shining</p>
+                                <h4 data-i18n="hco_3_h4">Revlon Silk Shining</h4>
+                                <p data-i18n="hco_3_p">Hair coloring with Revlon Silk Shining</p>
                             </div>
                             <div class="pricing-price">Tk.650</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Burgundy Hair Color</h4>
-                                <p>Coloring with Burgundy Hair Color</p>
+                                <h4 data-i18n="hco_4_h4">Burgundy Hair Color</h4>
+                                <p data-i18n="hco_4_p">Coloring with Burgundy Hair Color</p>
                             </div>
                             <div class="pricing-price">Tk.650</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Fashionable Color Stick (Regular)</h4>
-                                <p>Coloring hair with Fashionable Color Stick (Regular)</p>
+                                <h4 data-i18n="hco_5_h4">Fashionable Color Stick (Regular)</h4>
+                                <p data-i18n="hco_5_p">Coloring hair with Fashionable Color Stick (Regular)</p>
                             </div>
                             <div class="pricing-price">Tk.200</div>
                         </div>
@@ -398,29 +412,29 @@
                     <div class="pricing-list">
                         <div class="pricing-item">
                             <div class="pricing-info">
-                                <h4>Fashionable Color Stick (Premium)</h4>
-                                <p>Coloring hair with Fashionable Color Stick (Premium)</p>
+                                <h4 data-i18n="hco_6_h4">Fashionable Color Stick (Premium)</h4>
+                                <p data-i18n="hco_6_p">Coloring hair with Fashionable Color Stick (Premium)</p>
                             </div>
                             <div class="pricing-price">Tk.300</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Garnier Black Hair Shining</h4>
-                                <p>Hair coloring with Garnier Black Hair Shining</p>
+                                <h4 data-i18n="hco_7_h4">Garnier Black Hair Shining</h4>
+                                <p data-i18n="hco_7_p">Hair coloring with Garnier Black Hair Shining</p>
                             </div>
                             <div class="pricing-price">Tk.600</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Highlight Color Full Head</h4>
-                                <p>Hair coloring with Highlight Color Full Head</p>
+                                <h4 data-i18n="hco_8_h4">Highlight Color Full Head</h4>
+                                <p data-i18n="hco_8_p">Hair coloring with Highlight Color Full Head</p>
                             </div>
                             <div class="pricing-price">Tk.1500</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Fancy Hair Color</h4>
-                                <p>Hair coloring with Fancy Hair Color</p>
+                                <h4 data-i18n="hco_9_h4">Fancy Hair Color</h4>
+                                <p data-i18n="hco_9_p">Hair coloring with Fancy Hair Color</p>
                             </div>
                             <div class="pricing-price">Tk.2000</div>
                         </div>
@@ -430,29 +444,29 @@
 
             <!-- Hair Treatment & Rebonding -->
             <div class="menu-category reveal-up" id="hair-treatment-rebonding">
-                <div class="pricing-title">
+                <div class="pricing-title" data-i18n-html="htr_title">
                     <i class="fas fa-spa text-gold"></i> Hair Treatment & Rebonding
                 </div>
                 <div class="menu-grid">
                     <div class="pricing-list">
                         <div class="pricing-item">
                             <div class="pricing-info">
-                                <h4>Magic Hair Spa</h4>
-                                <p>Hair spa treatment for hair health</p>
+                                <h4 data-i18n="htr_1_h4">Magic Hair Spa</h4>
+                                <p data-i18n="htr_1_p">Hair spa treatment for hair health</p>
                             </div>
                             <div class="pricing-price">Tk.1000</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Hair Protein Treatment</h4>
-                                <p>Hair protein treatment for hair health</p>
+                                <h4 data-i18n="htr_2_h4">Hair Protein Treatment</h4>
+                                <p data-i18n="htr_2_p">Hair protein treatment for hair health</p>
                             </div>
                             <div class="pricing-price">Tk.800</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Hair Fall Treatment</h4>
-                                <p>Hair fall treatment for hair health</p>
+                                <h4 data-i18n="htr_3_h4">Hair Fall Treatment</h4>
+                                <p data-i18n="htr_3_p">Hair fall treatment for hair health</p>
                             </div>
                             <div class="pricing-price">Tk.1200</div>
                         </div>
@@ -461,22 +475,22 @@
                     <div class="pricing-list">
                         <div class="pricing-item">
                             <div class="pricing-info">
-                                <h4>Hair Rebonding</h4>
-                                <p>Hair rebonding treatment for hair health</p>
+                                <h4 data-i18n="htr_4_h4">Hair Rebonding</h4>
+                                <p data-i18n="htr_4_p">Hair rebonding treatment for hair health</p>
                             </div>
                             <div class="pricing-price">Tk.3500</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Hair Straightening</h4>
-                                <p>Hair straightening treatment for hair health</p>
+                                <h4 data-i18n="htr_5_h4">Hair Straightening</h4>
+                                <p data-i18n="htr_5_p">Hair straightening treatment for hair health</p>
                             </div>
                             <div class="pricing-price">Tk.3000</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Hair Curling</h4>
-                                <p>Hair curling treatment for hair health</p>
+                                <h4 data-i18n="htr_6_h4">Hair Curling</h4>
+                                <p data-i18n="htr_6_p">Hair curling treatment for hair health</p>
                             </div>
                             <div class="pricing-price">Tk.2200</div>
                         </div>
@@ -486,78 +500,78 @@
 
             <!-- Facials -->
             <div class="menu-category reveal-up" id="facials">
-                <div class="pricing-title">
+                <div class="pricing-title" data-i18n-html="fac_title">
                     <i class="fa-regular fa-face-smile-beam text-gold"></i> Facials
                 </div>
                 <div class="menu-grid">
                     <div class="pricing-list">
                         <div class="pricing-item">
                             <div class="pricing-info">
-                                <h4>Milk Facial</h4>
-                                <p>Nourishing skin treatment with milk extracts</p>
+                                <h4 data-i18n="fac_1_h4">Milk Facial</h4>
+                                <p data-i18n="fac_1_p">Nourishing skin treatment with milk extracts</p>
                             </div>
                             <div class="pricing-price">Tk.1150</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Shahnaz Herbal Facial</h4>
-                                <p>Ayurvedic glow treatment by Shahnaz Herbals</p>
+                                <h4 data-i18n="fac_2_h4">Shahnaz Herbal Facial</h4>
+                                <p data-i18n="fac_2_p">Ayurvedic glow treatment by Shahnaz Herbals</p>
                             </div>
                             <div class="pricing-price">Tk.1350</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Shahnaz Gold Facial</h4>
-                                <p>Luxury gold treatment for radiance</p>
+                                <h4 data-i18n="fac_3_h4">Shahnaz Gold Facial</h4>
+                                <p data-i18n="fac_3_p">Luxury gold treatment for radiance</p>
                             </div>
                             <div class="pricing-price">Tk.1700</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Shahnaz Rose Facial</h4>
-                                <p>Refreshing rose treatment for natural glow</p>
+                                <h4 data-i18n="fac_4_h4">Shahnaz Rose Facial</h4>
+                                <p data-i18n="fac_4_p">Refreshing rose treatment for natural glow</p>
                             </div>
                             <div class="pricing-price">Tk.2000</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Shahnaz Pearl Facial</h4>
-                                <p>Pearl facial treatment for skin brightening</p>
+                                <h4 data-i18n="fac_5_h4">Shahnaz Pearl Facial</h4>
+                                <p data-i18n="fac_5_p">Pearl facial treatment for skin brightening</p>
                             </div>
                             <div class="pricing-price">Tk.3000</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Diamond Facial</h4>
-                                <p>Diamond facial treatment for skin brightening</p>
+                                <h4 data-i18n="fac_6_h4">Diamond Facial</h4>
+                                <p data-i18n="fac_6_p">Diamond facial treatment for skin brightening</p>
                             </div>
                             <div class="pricing-price">Tk.1400</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Pearl White Toning Facial</h4>
-                                <p>Pearl white toning facial treatment for skin brightening</p>
+                                <h4 data-i18n="fac_7_h4">Pearl White Toning Facial</h4>
+                                <p data-i18n="fac_7_p">Pearl white toning facial treatment for skin brightening</p>
                             </div>
                             <div class="pricing-price">Tk.1400</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Bio-Hydra Facial (Regular)</h4>
-                                <p>Deep hydration facial for radiant skin</p>
+                                <h4 data-i18n="fac_8_h4">Bio-Hydra Facial (Regular)</h4>
+                                <p data-i18n="fac_8_p">Deep hydration facial for radiant skin</p>
                             </div>
                             <div class="pricing-price">Tk.2500</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Bio-Hydra Facial (Premium)</h4>
-                                <p>Premium hydration facial for radiant skin</p>
+                                <h4 data-i18n="fac_9_h4">Bio-Hydra Facial (Premium)</h4>
+                                <p data-i18n="fac_9_p">Premium hydration facial for radiant skin</p>
                             </div>
                             <div class="pricing-price">Tk.3000</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Signature Gold Facial</h4>
-                                <p>Luxury gold facial for radiant glow</p>
+                                <h4 data-i18n="fac_10_h4">Signature Gold Facial</h4>
+                                <p data-i18n="fac_10_p">Luxury gold facial for radiant glow</p>
                             </div>
                             <div class="pricing-price">Tk.850</div>
                         </div>
@@ -565,64 +579,64 @@
                     <div class="pricing-list">
                         <div class="pricing-item">
                             <div class="pricing-info">
-                                <h4>Bron Curing Facial</h4>
-                                <p>Bron curing facial treatment for skin brightening</p>
+                                <h4 data-i18n="fac_11_h4">Bron Curing Facial</h4>
+                                <p data-i18n="fac_11_p">Bron curing facial treatment for skin brightening</p>
                             </div>
                             <div class="pricing-price">Tk.1000</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Food Facial</h4>
-                                <p>Food facial treatment for skin brightening</p>
+                                <h4 data-i18n="fac_12_h4">Food Facial</h4>
+                                <p data-i18n="fac_12_p">Food facial treatment for skin brightening</p>
                             </div>
                             <div class="pricing-price">Tk.850</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Jojoba Facial</h4>
-                                <p>Jojoba facial treatment for skin brightening</p>
+                                <h4 data-i18n="fac_13_h4">Jojoba Facial</h4>
+                                <p data-i18n="fac_13_p">Jojoba facial treatment for skin brightening</p>
                             </div>
                             <div class="pricing-price">Tk.1600</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Herbal Facial</h4>
-                                <p>Herbal facial treatment for skin brightening</p>
+                                <h4 data-i18n="fac_14_h4">Herbal Facial</h4>
+                                <p data-i18n="fac_14_p">Herbal facial treatment for skin brightening</p>
                             </div>
                             <div class="pricing-price">Tk.700</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Strawberry Facial</h4>
-                                <p>Strawberry facial treatment for skin brightening</p>
+                                <h4 data-i18n="fac_15_h4">Strawberry Facial</h4>
+                                <p data-i18n="fac_15_p">Strawberry facial treatment for skin brightening</p>
                             </div>
                             <div class="pricing-price">Tk.700</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Steam Facial</h4>
-                                <p>Steam facial treatment for skin brightening</p>
+                                <h4 data-i18n="fac_16_h4">Steam Facial</h4>
+                                <p data-i18n="fac_16_p">Steam facial treatment for skin brightening</p>
                             </div>
                             <div class="pricing-price">Tk.300</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Advanced Hydra Facial</h4>
-                                <p>Advanced hydra facial treatment for skin brightening</p>
+                                <h4 data-i18n="fac_17_h4">Advanced Hydra Facial</h4>
+                                <p data-i18n="fac_17_p">Advanced hydra facial treatment for skin brightening</p>
                             </div>
                             <div class="pricing-price">Tk.4000</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Carbon Facial (Per Session)</h4>
-                                <p>Carbon facial treatment for skin brightening</p>
+                                <h4 data-i18n="fac_18_h4">Carbon Facial (Per Session)</h4>
+                                <p data-i18n="fac_18_p">Carbon facial treatment for skin brightening</p>
                             </div>
                             <div class="pricing-price">Tk.2500</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>BB Glow Facial</h4>
-                                <p>BB glow facial treatment for skin brightening</p>
+                                <h4 data-i18n="fac_19_h4">BB Glow Facial</h4>
+                                <p data-i18n="fac_19_p">BB glow facial treatment for skin brightening</p>
                             </div>
                             <div class="pricing-price">Tk.3500</div>
                         </div>
@@ -632,22 +646,22 @@
 
             <!-- Spa Services -->
             <div class="menu-category reveal-up" id="spa-services">
-                <div class="pricing-title">
+                <div class="pricing-title" data-i18n-html="spa_title">
                     <i class="fas fa-spa text-gold"></i> Spa Services
                 </div>
                 <div class="menu-grid">
                     <div class="pricing-list">
                         <div class="pricing-item">
                             <div class="pricing-info">
-                                <h4>Body Therapy (1 Hour)</h4>
-                                <p>Relaxing treatment to rejuvenate body and mind</p>
+                                <h4 data-i18n="spa_1_h4">Body Therapy (1 Hour)</h4>
+                                <p data-i18n="spa_1_p">Relaxing treatment to rejuvenate body and mind</p>
                             </div>
                             <div class="pricing-price">Tk.700</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Aroma Body Massage (1 Hour)</h4>
-                                <p>Relaxing treatment to rejuvenate body and mind</p>
+                                <h4 data-i18n="spa_2_h4">Aroma Body Massage (1 Hour)</h4>
+                                <p data-i18n="spa_2_p">Relaxing treatment to rejuvenate body and mind</p>
                             </div>
                             <div class="pricing-price">Tk.1000</div>
                         </div>
@@ -656,15 +670,15 @@
                     <div class="pricing-list">
                         <div class="pricing-item">
                             <div class="pricing-info">
-                                <h4>Tissue Massage (1 Hour)</h4>
-                                <p>Relaxing treatment to rejuvenate body and mind</p>
+                                <h4 data-i18n="spa_3_h4">Tissue Massage (1 Hour)</h4>
+                                <p data-i18n="spa_3_p">Relaxing treatment to rejuvenate body and mind</p>
                             </div>
                             <div class="pricing-price">Tk.1500</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Steam Bath (30 Min.)</h4>
-                                <p>Detoxifying steam bath for relaxation and cleansing</p>
+                                <h4 data-i18n="spa_4_h4">Steam Bath (30 Min.)</h4>
+                                <p data-i18n="spa_4_p">Detoxifying steam bath for relaxation and cleansing</p>
                             </div>
                             <div class="pricing-price">Tk.1000</div>
                         </div>
@@ -674,22 +688,22 @@
 
             <!-- Groom Makeup & Attire -->
             <div class="menu-category reveal-up" id="groom-makeup-attire">
-                <div class="pricing-title">
+                <div class="pricing-title" data-i18n-html="gma_title">
                     <i class="fa-solid fa-heart-circle-check text-gold"></i> Groom Makeup & Attire
                 </div>
                 <div class="menu-grid">
                     <div class="pricing-list">
                         <div class="pricing-item">
                             <div class="pricing-info">
-                                <h4>Groom Attire (Standard)</h4>
-                                <p>Elegant outfit styling for modern groom look</p>
+                                <h4 data-i18n="gma_1_h4">Groom Attire (Standard)</h4>
+                                <p data-i18n="gma_1_p">Elegant outfit styling for modern groom look</p>
                             </div>
                             <div class="pricing-price">Tk.3500</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Groom Attire (Special)</h4>
-                                <p>Special outfit styling for modern groom look</p>
+                                <h4 data-i18n="gma_2_h4">Groom Attire (Special)</h4>
+                                <p data-i18n="gma_2_p">Special outfit styling for modern groom look</p>
                             </div>
                             <div class="pricing-price">Tk.6000</div>
                         </div>
@@ -698,15 +712,15 @@
                     <div class="pricing-list">
                         <div class="pricing-item">
                             <div class="pricing-info">
-                                <h4>Groom Attire (Premium)</h4>
-                                <p>Premium outfit styling for modern groom look</p>
+                                <h4 data-i18n="gma_3_h4">Groom Attire (Premium)</h4>
+                                <p data-i18n="gma_3_p">Premium outfit styling for modern groom look</p>
                             </div>
                             <div class="pricing-price">Tk.8500</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Party Makeup</h4>
-                                <p>Professional makeup for party look</p>
+                                <h4 data-i18n="gma_4_h4">Party Makeup</h4>
+                                <p data-i18n="gma_4_p">Professional makeup for party look</p>
                             </div>
                             <div class="pricing-price">Tk.1500</div>
                         </div>
@@ -716,36 +730,36 @@
 
             <!-- Tattoo & Other Services -->
             <div class="menu-category reveal-up" id="tattoo-other-services">
-                <div class="pricing-title">
+                <div class="pricing-title" data-i18n-html="tos_title">
                     <i class="fa-solid fa-ankh text-gold"></i> Tattoo & Other Services
                 </div>
                 <div class="menu-grid">
                     <div class="pricing-list">
                         <div class="pricing-item">
                             <div class="pricing-info">
-                                <h4>Mole Removing</h4>
-                                <p>Mole removing treatment for skin</p>
+                                <h4 data-i18n="tos_1_h4">Mole Removing</h4>
+                                <p data-i18n="tos_1_p">Mole removing treatment for skin</p>
                             </div>
                             <div class="pricing-price">Tk.500</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Tattoo Removal</h4>
-                                <p>Tattoo removal from skin (per Inch)</p>
+                                <h4 data-i18n="tos_2_h4">Tattoo Removal</h4>
+                                <p data-i18n="tos_2_p">Tattoo removal from skin (per Inch)</p>
                             </div>
                             <div class="pricing-price">Tk.2500</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Tattoo Design (Regular)</h4>
-                                <p>Tattoo design on skin (Per Inch)</p>
+                                <h4 data-i18n="tos_3_h4">Tattoo Design (Regular)</h4>
+                                <p data-i18n="tos_3_p">Tattoo design on skin (Per Inch)</p>
                             </div>
                             <div class="pricing-price">Tk.1000</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Tattoo Design (Radium)</h4>
-                                <p>Radium Tattoo design on skin (Per Inch)</p>
+                                <h4 data-i18n="tos_4_h4">Tattoo Design (Radium)</h4>
+                                <p data-i18n="tos_4_p">Radium Tattoo design on skin (Per Inch)</p>
                             </div>
                             <div class="pricing-price">Tk.1500</div>
                         </div>
@@ -753,29 +767,29 @@
                     <div class="pricing-list">
                         <div class="pricing-item">
                             <div class="pricing-info">
-                                <h4>Fair Polish (Both Hand, Face & Neck)</h4>
-                                <p>Fair Polish treatment for men</p>
+                                <h4 data-i18n="tos_5_h4">Fair Polish (Both Hand, Face & Neck)</h4>
+                                <p data-i18n="tos_5_p">Fair Polish treatment for men</p>
                             </div>
                             <div class="pricing-price">Tk.1200</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Pedicure & Manicure (Regular)</h4>
-                                <p>Pedicure & Manicure treatment for men</p>
+                                <h4 data-i18n="tos_6_h4">Pedicure & Manicure (Regular)</h4>
+                                <p data-i18n="tos_6_p">Pedicure & Manicure treatment for men</p>
                             </div>
                             <div class="pricing-price">Tk.800</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Ear Piercing</h4>
-                                <p>Ear piercing for men (Per Ear)</p>
+                                <h4 data-i18n="tos_7_h4">Ear Piercing</h4>
+                                <p data-i18n="tos_7_p">Ear piercing for men (Per Ear)</p>
                             </div>
                             <div class="pricing-price">Tk.300</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Eyebrow Pluck</h4>
-                                <p>Eyebrow Pluck for men</p>
+                                <h4 data-i18n="tos_8_h4">Eyebrow Pluck</h4>
+                                <p data-i18n="tos_8_p">Eyebrow Pluck for men</p>
                             </div>
                             <div class="pricing-price">Tk.100</div>
                         </div>
@@ -785,39 +799,40 @@
 
             <!-- Packages -->
             <div class="menu-category reveal-up" id="packages">
-                <div class="pricing-title">
+                <div class="pricing-title" data-i18n-html="pkg_title">
                     <i class="fas fa-crown text-gold"></i> Signature Packages
                 </div>
                 <div class="menu-grid">
                     <div class="pricing-list">
                         <div class="pricing-item">
                             <div class="pricing-info">
-                                <h4>Package- 01</h4>
-                                <p>Haircut + Beard Cut + Hair wash with Setup + Diamond Facial + Lips Care</p>
+                                <h4 data-i18n="pkg_1_h4">Package- 01</h4>
+                                <p data-i18n="pkg_1_p">Haircut + Beard Cut + Hair wash with Setup + Diamond Facial +
+                                    Lips Care</p>
                             </div>
                             <div class="pricing-price"><s>Tk.1350</s><br>Tk.1000</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Package- 02</h4>
-                                <p>Haircut + Beard Cut + Hair wash with Setup + Garnier Black Natural Shining + Food
-                                    Facial + Lips Care</p>
+                                <h4 data-i18n="pkg_2_h4">Package- 02</h4>
+                                <p data-i18n="pkg_2_p">Haircut + Beard Cut + Hair wash with Setup + Garnier Black
+                                    Natural Shining + Food Facial + Lips Care</p>
                             </div>
                             <div class="pricing-price"><s>Tk.2000</s><br>Tk.1500</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Package- 03</h4>
-                                <p>Haircut + Beard Cut + Hair wash with Setup + Milk Facial + Regular Pedicure &
-                                    Menicure + Lips Care</p>
+                                <h4 data-i18n="pkg_3_h4">Package- 03</h4>
+                                <p data-i18n="pkg_3_p">Haircut + Beard Cut + Hair wash with Setup + Milk Facial +
+                                    Regular Pedicure & Menicure + Lips Care</p>
                             </div>
                             <div class="pricing-price"><s>Tk.2450</s><br>Tk.2000</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Package- 04</h4>
-                                <p>Haircut + Beard Cut + Hair wash with Setup + Mark Gel Shining + Gold Facial + Lips
-                                    Care</p>
+                                <h4 data-i18n="pkg_4_h4">Package- 04</h4>
+                                <p data-i18n="pkg_4_p">Haircut + Beard Cut + Hair wash with Setup + Mark Gel Shining +
+                                    Gold Facial + Lips Care</p>
                             </div>
                             <div class="pricing-price"><s>Tk.2700</s><br>Tk.2200</div>
                         </div>
@@ -826,24 +841,24 @@
                     <div class="pricing-list">
                         <div class="pricing-item">
                             <div class="pricing-info">
-                                <h4>Premium Package- 05</h4>
-                                <p>Haircut + Beard Cut + Hair wash + Lip Care + Bigen Hair Shining + Hair Spa + Advanced
-                                    Hydra Facial + Aroma Body Massage (1 Hour) + Pedicure & Manicure (Regular) + Steam
-                                    Bath (30 Min.)</p>
+                                <h4 data-i18n="pkg_5_h4">Premium Package- 05</h4>
+                                <p data-i18n="pkg_5_p">Haircut + Beard Cut + Hair wash + Lip Care + Bigen Hair Shining +
+                                    Hair Spa + Advanced Hydra Facial + Aroma Body Massage (1 Hour) + Pedicure & Manicure
+                                    (Regular) + Steam Bath (30 Min.)</p>
                             </div>
                             <div class="pricing-price"><s>Tk.9150</s><br>Tk.7000</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Pedicure & Manicure (Regular)</h4>
-                                <p>Pedicure & Manicure treatment for men</p>
+                                <h4 data-i18n="pkg_6_h4">Pedicure & Manicure (Regular)</h4>
+                                <p data-i18n="pkg_6_p">Pedicure & Manicure treatment for men</p>
                             </div>
                             <div class="pricing-price">Tk.800</div>
                         </div>
                         <div class="pricing-item mt-30">
                             <div class="pricing-info">
-                                <h4>Pedicure & Manicure with Fair Polish</h4>
-                                <p>Pedicure & Manicure with Fair Polish treatment for men</p>
+                                <h4 data-i18n="pkg_7_h4">Pedicure & Manicure with Fair Polish</h4>
+                                <p data-i18n="pkg_7_p">Pedicure & Manicure with Fair Polish treatment for men</p>
                             </div>
                             <div class="pricing-price">Tk.1800</div>
                         </div>
@@ -852,9 +867,8 @@
             </div>
 
             <div class="text-center mt-50 reveal-up">
-                <a href="https://api.whatsapp.com/send?phone=8801349049227" class="btn btn-primary" target="_blank">Book
-                    Your Appoinment
-                    Now</a>
+                <a href="https://api.whatsapp.com/send?phone=8801349049227" class="btn btn-primary" target="_blank"
+                    data-i18n="pricing_btn">Book Your Appointment Now</a>
             </div>
         </div>
     </section>
@@ -863,8 +877,8 @@
     <section class="testimonials section-padding bg-darker" id="testimonials">
         <div class="container">
             <div class="section-title text-center reveal-up">
-                <span class="subtitle">Testimonials</span>
-                <h2>Customers Say About Us</h2>
+                <span class="subtitle" data-i18n="tst_sub">Testimonials</span>
+                <h2 data-i18n="tst_h2">Customers Say About Us</h2>
             </div>
 
             <div class="testimonial-slider reveal-up">
@@ -873,15 +887,16 @@
                     <div class="testimonial-slide">
                         <div class="testimonial-card">
                             <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-                            <p class="testimonial-text">"Absolutely the best barber experience I've ever had. The
-                                attention to detail and the luxury vibe make it worth every penny. Highly recommended."
+                            <p class="testimonial-text">"নিঃসন্দেহে এটি শহরের সেরা সেলুন। পরিষ্কার-পরিচ্ছন্ন পরিবেশ,
+                                দক্ষ স্টাফ এবং প্রিমিয়াম সার্ভিস আমাকে মুগ্ধ করেছে। প্রতিবারই অসাধারণ অভিজ্ঞতা পাই—যারা
+                                সেরা গ্রুমিং চান, তাদের জন্য পারফেক্ট জায়গা।
                             </p>
                             <div class="testimonial-author">
                                 <div class="author-profile">
                                     <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="James Harrison"
                                         class="author-img">
                                     <div class="author-info">
-                                        <h4>James Harrison</h4>
+                                        <h4>সাদমান বিন আব্দুল্লাহ্</h4>
                                         <span>Regular Client</span>
                                     </div>
                                 </div>
@@ -900,14 +915,16 @@
                     <div class="testimonial-slide">
                         <div class="testimonial-card">
                             <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-                            <p class="testimonial-text">"The hot towel shave is incredible. It's not just a haircut,
-                                it's a complete relaxation session. Menz Groom sets the standard for premium spas."</p>
+                            <p class="testimonial-text">"বিয়ের জন্য এখানে যে অ্যাটায়ার ও গ্রুমিং সার্ভিস পেয়েছি, তা
+                                সত্যিই অসাধারণ। পারফেক্ট লুক, নিখুঁত ফিনিশ আর প্রিমিয়াম স্টাইল—আমার বিশেষ দিনটিকে আরও
+                                স্মরণীয় করে তুলেছে। Highly recommended!
+                                "</p>
                             <div class="testimonial-author">
                                 <div class="author-profile">
                                     <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Michael Chen"
                                         class="author-img">
                                     <div class="author-info">
-                                        <h4>Michael Chen</h4>
+                                        <h4>আহসানুল করিম প্রকৃতি</h4>
                                         <span>First-time Client</span>
                                     </div>
                                 </div>
@@ -926,15 +943,15 @@
                     <div class="testimonial-slide">
                         <div class="testimonial-card">
                             <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-                            <p class="testimonial-text">"Been coming here for 6 months and they never miss. The
-                                atmosphere is unmatched, and the staff truly understands what true customer service
-                                means."</p>
+                            <p class="testimonial-text">"এখানে হেয়ার কালার করিয়ে দারুণ অভিজ্ঞতা পেয়েছি। রঙ একদম
+                                ন্যাচারাল ও লং-লাস্টিং। চুল নরম, উজ্জ্বল ও স্টাইলিশ দেখাচ্ছে। সার্ভিস খুব প্রফেশনাল ও
+                                সন্তোষজনক। অবশ্যই রিকমেন্ড করি।"</p>
                             <div class="testimonial-author">
                                 <div class="author-profile">
                                     <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Alexander Pierce"
                                         class="author-img">
                                     <div class="author-info">
-                                        <h4>Alexander Pierce</h4>
+                                        <h4>মোঃ আশরাফ হোসেন</h4>
                                         <span>Loyal Customer</span>
                                     </div>
                                 </div>
@@ -953,14 +970,16 @@
                     <div class="testimonial-slide">
                         <div class="testimonial-card">
                             <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-                            <p class="testimonial-text">"The executive package is a game changer. I walk out feeling
-                                like a new man every time. True professionalism."</p>
+                            <p class="testimonial-text">"এখানে ফেসিয়াল সার্ভিস নিয়ে দারুণ অভিজ্ঞতা হয়েছে। ত্বক
+                                পরিষ্কার, উজ্জ্বল ও ফ্রেশ দেখাচ্ছে। প্রোডাক্টের মান খুব ভালো, আর স্টাফরা অত্যন্ত
+                                যত্নশীল। রিল্যাক্সিং পরিবেশে প্রিমিয়াম কেয়ার—নিশ্চয়ই আবার আসবো।
+                                "</p>
                             <div class="testimonial-author">
                                 <div class="author-profile">
                                     <img src="https://randomuser.me/api/portraits/men/51.jpg" alt="Daniel Foster"
                                         class="author-img">
                                     <div class="author-info">
-                                        <h4>Daniel Foster</h4>
+                                        <h4>সুদীপ কুমার সাহা</h4>
                                         <span>Executive Director</span>
                                     </div>
                                 </div>
@@ -979,15 +998,17 @@
                     <div class="testimonial-slide">
                         <div class="testimonial-card">
                             <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-                            <p class="testimonial-text">"First time getting a straight razor shave and it was
-                                phenomenal. The attention to detail is unmatched anywhere else in the city."</p>
+                            <p class="testimonial-text">"এখানকার স্টাফরা অত্যন্ত ভদ্র, আন্তরিক ও প্রফেশনাল। তারা মনোযোগ
+                                দিয়ে কথা শোনে এবং চাহিদা অনুযায়ী সেরা সার্ভিস দেয়। এমন আচরণ সত্যিই মুগ্ধ করে—এখানে
+                                আসতে সবসময়ই ভালো লাগে।
+                                "</p>
                             <div class="testimonial-author">
                                 <div class="author-profile">
                                     <img src="https://randomuser.me/api/portraits/men/15.jpg" alt="Marcus Johnson"
                                         class="author-img">
                                     <div class="author-info">
-                                        <h4>Marcus Johnson</h4>
-                                        <span>Local Guide</span>
+                                        <h4>মোঃ সিফাতুল ইসলাম জাহিদ</h4>
+                                        <span>Regular Customer</span>
                                     </div>
                                 </div>
                                 <div class="rating">
@@ -1012,7 +1033,7 @@
                                     <img src="https://randomuser.me/api/portraits/men/63.jpg" alt="Thomas Wright"
                                         class="author-img">
                                     <div class="author-info">
-                                        <h4>Thomas Wright</h4>
+                                        <h4>অনুজ কুমার সাহা</h4>
                                         <span>Entrepreneur</span>
                                     </div>
                                 </div>
@@ -1031,15 +1052,17 @@
                     <div class="testimonial-slide">
                         <div class="testimonial-card">
                             <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-                            <p class="testimonial-text">"Best skin fade in the city, hands down. The barbers here are
-                                true artists and meticulous about their craft."</p>
+                            <p class="testimonial-text">"হাইড্রা ফেসিয়াল সার্ভিসটি ছিল অসাধারণ অভিজ্ঞতা। ত্বক গভীরভাবে
+                                পরিষ্কার, হাইড্রেটেড ও উজ্জ্বল হয়েছে। প্রক্রিয়াটি একেবারে আরামদায়ক এবং ফলাফল দ্রুত
+                                চোখে পড়ার মতো। ত্বকে এনে দিয়েছে সতেজতা ও প্রিমিয়াম গ্লো।
+                                "</p>
                             <div class="testimonial-author">
                                 <div class="author-profile">
                                     <img src="https://randomuser.me/api/portraits/men/28.jpg" alt="Kevin Martinez"
                                         class="author-img">
                                     <div class="author-info">
-                                        <h4>Kevin Martinez</h4>
-                                        <span>Fitness Coach</span>
+                                        <h4>এস এম রিশাদ</h4>
+                                        <span>Software Developer</span>
                                     </div>
                                 </div>
                                 <div class="rating">
@@ -1057,15 +1080,17 @@
                     <div class="testimonial-slide">
                         <div class="testimonial-card">
                             <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-                            <p class="testimonial-text">"I brought my groomsmen here before my wedding. The VIP
-                                treatment we received made the day even more special."</p>
+                            <p class="testimonial-text">"ম্যানিকিউর ও পেডিকিউর সার্ভিসটি ছিল অত্যন্ত আরামদায়ক ও
+                                প্রিমিয়াম। হাত-পা পরিষ্কার, নরম ও সুন্দর দেখাচ্ছে। স্টাফদের যত্ন ও নিখুঁত কাজ সত্যিই
+                                প্রশংসনীয়—রিল্যাক্সিং অভিজ্ঞতা, অবশ্যই আবার আসবো।
+                                "</p>
                             <div class="testimonial-author">
                                 <div class="author-profile">
                                     <img src="https://randomuser.me/api/portraits/men/77.jpg" alt="David Thompson"
                                         class="author-img">
                                     <div class="author-info">
-                                        <h4>David Thompson</h4>
-                                        <span>Groom</span>
+                                        <h4>মোঃ আসিফ ইকবাল</h4>
+                                        <span>Sr. Executive</span>
                                     </div>
                                 </div>
                                 <div class="rating">
@@ -1090,8 +1115,8 @@
                                     <img src="https://randomuser.me/api/portraits/men/84.jpg" alt="Robert Chen"
                                         class="author-img">
                                     <div class="author-info">
-                                        <h4>Robert Chen</h4>
-                                        <span>Engineer</span>
+                                        <h4>জেসন বিনয় মজুমদার</h4>
+                                        <span>Regular Customer</span>
                                     </div>
                                 </div>
                                 <div class="rating">
@@ -1109,15 +1134,17 @@
                     <div class="testimonial-slide">
                         <div class="testimonial-card">
                             <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-                            <p class="testimonial-text">"They saved my beard! The shaping and conditioning treatment is
-                                exactly what I needed. Looking sharper than ever."</p>
+                            <p class="testimonial-text">"পার্টি মেকআপটি ছিল একেবারে নিখুঁত ও গ্ল্যামারাস। লুকটি
+                                দীর্ঘক্ষণ টিকে ছিল এবং পুরো সময় ধরে উজ্জ্বল ও ফ্রেশ দেখিয়েছে। প্রফেশনাল টাচে আমার
+                                স্টাইলকে আরও সুন্দরভাবে তুলে ধরা হয়েছে—নিঃসন্দেহে অসাধারণ অভিজ্ঞতা।
+                                "</p>
                             <div class="testimonial-author">
                                 <div class="author-profile">
                                     <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="Samuel Brooks"
                                         class="author-img">
                                     <div class="author-info">
-                                        <h4>Samuel Brooks</h4>
-                                        <span>Creative Director</span>
+                                        <h4>মোঃ রাসেল তালুকদার</h4>
+                                        <span>Executive Director</span>
                                     </div>
                                 </div>
                                 <div class="rating">
@@ -1148,68 +1175,68 @@
     <section class="team section-padding" id="team">
         <div class="container">
             <div class="section-title text-center reveal-up">
-                <span class="subtitle">Our Team</span>
-                <h2>Meet Our Grooming Experts</h2>
+                <span class="subtitle" data-i18n="team_sub">Our Team</span>
+                <h2 data-i18n="team_h2">Meet Our Grooming Experts</h2>
             </div>
 
             <div class="team-grid">
                 <!-- Member 1 -->
                 <div class="team-card reveal-up" style="transition-delay: 0.1s;">
                     <div class="team-img">
-                        <img src="assets/images/Team/Team-01.png" alt="Arthur Shelby">
+                        <img src="assets/images/Team/Team-01.png" alt="Nabila Tabassum">
                         <div class="team-social">
                             <a href="#"><i class="fab fa-instagram"></i></a>
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
                         </div>
                     </div>
                     <div class="team-info">
-                        <h3>Nabila Tabassum</h3>
-                        <span>Master Hair Styler</span>
+                        <h3 data-i18n="team_name1">Nabila Tabassum</h3>
+                        <span data-i18n="team_role1">Master Hair Styler</span>
                     </div>
                 </div>
 
                 <!-- Member 2 -->
                 <div class="team-card reveal-up" style="transition-delay: 0.2s;">
                     <div class="team-img">
-                        <img src="assets/images/Team/Team-02.png" alt="Thomas Shelby">
+                        <img src="assets/images/Team/Team-02.png" alt="Md. Shafin Rahman">
                         <div class="team-social">
                             <a href="#"><i class="fab fa-instagram"></i></a>
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
                         </div>
                     </div>
                     <div class="team-info">
-                        <h3>Md. Shafin Rahman</h3>
-                        <span>Senior Stylist</span>
+                        <h3 data-i18n="team_name2">Md. Shafin Rahman</h3>
+                        <span data-i18n="team_role2">Senior Stylist</span>
                     </div>
                 </div>
 
                 <!-- Member 3 -->
                 <div class="team-card reveal-up" style="transition-delay: 0.3s;">
                     <div class="team-img">
-                        <img src="assets/images/Team/Team-03.png" alt="Michael Gray">
+                        <img src="assets/images/Team/Team-03.png" alt="Gloria Halder">
                         <div class="team-social">
                             <a href="#"><i class="fab fa-instagram"></i></a>
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
                         </div>
                     </div>
                     <div class="team-info">
-                        <h3>Gloria Halder</h3>
-                        <span>Facial Expert</span>
+                        <h3 data-i18n="team_name3">Gloria Halder</h3>
+                        <span data-i18n="team_role3">Facial Expert</span>
                     </div>
                 </div>
 
                 <!-- Member 4 -->
                 <div class="team-card reveal-up" style="transition-delay: 0.4s;">
                     <div class="team-img">
-                        <img src="assets/images/Team/Team-04.png" alt="Alfie Solomons">
+                        <img src="assets/images/Team/Team-04.png" alt="Binoy Kumar Das">
                         <div class="team-social">
                             <a href="#"><i class="fab fa-instagram"></i></a>
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
                         </div>
                     </div>
                     <div class="team-info">
-                        <h3>Binoy Kumar Das</h3>
-                        <span>Color Specialist</span>
+                        <h3 data-i18n="team_name4">Binoy Kumar Das</h3>
+                        <span data-i18n="team_role4">Color Specialist</span>
                     </div>
                 </div>
             </div>
@@ -1220,29 +1247,32 @@
     <section class="contact section-padding bg-darker" id="contact">
         <div class="container">
             <div class="section-title text-center reveal-up">
-                <span class="subtitle">Get In Touch</span>
-                <h2>Contact Us</h2>
+                <span class="subtitle" data-i18n="contact_sub">Get In Touch</span>
+                <h2 data-i18n="contact_h2">Contact Us</h2>
             </div>
 
             <div class="contact-form-container reveal-up">
                 <form id="contactForm" class="contact-form">
                     <div class="form-row">
                         <div class="form-group">
-                            <input type="text" id="contactName" class="form-control" placeholder="Your Name" required>
+                            <input type="text" id="contactName" class="form-control" placeholder="Your Name"
+                                data-i18n-placeholder="contact_ph_name" required>
                         </div>
                         <div class="form-group">
                             <input type="tel" id="contactPhone" class="form-control" placeholder="Mobile Number"
-                                required>
+                                data-i18n-placeholder="contact_ph_phone" required>
                         </div>
                     </div>
                     <div class="form-group">
-                        <input type="text" id="contactSubject" class="form-control" placeholder="Subject" required>
+                        <input type="text" id="contactSubject" class="form-control" placeholder="Subject"
+                            data-i18n-placeholder="contact_ph_subject" required>
                     </div>
                     <div class="form-group">
                         <textarea id="contactMessage" class="form-control" rows="5" placeholder="Your Message"
-                            required></textarea>
+                            data-i18n-placeholder="contact_ph_msg" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary" id="contactSubmitBtn">Send Message</button>
+                    <button type="submit" class="btn btn-primary" id="contactSubmitBtn" data-i18n="contact_btn">Send
+                        Message</button>
                     <div id="contactFormStatus" class="form-status" style="display: none;"></div>
                 </form>
             </div>
@@ -1322,56 +1352,61 @@
                         <img src="assets/images/logo.png" alt="Menz Groom Premium Salon & Spa" class="logo-img">
                     </a>
 
-                    <p class="footer-desc" style="text-align: justify;">Step into Menz Groom Premium Salon & Spa, your
+                    <p class="footer-desc" style="text-align: justify;" data-i18n="footer_desc1">Step into Menz Groom
+                        Premium Salon & Spa, your
                         trusted grooming destination in Savar. We warmly invite you to
                         enjoy expert haircuts, relaxing spa treatments, and premium skincare services.
                     <p>
-                    <p class="footer-desc" style="text-align: justify;"> Experience personalized care, modern style, and
+                    <p class="footer-desc" style="text-align: justify;" data-i18n="footer_desc2"> Experience
+                        personalized care, modern style, and
                         ultimate relaxation designed to refresh your look and boost your confidence.</p>
 
-                    <p class="footer-desc" style="text-align: justify;">We are waiting for you!!</p>
+                    <p class="footer-desc" style="text-align: justify;" data-i18n="footer_desc3">We are waiting for
+                        you!!</p>
                 </div>
 
                 <div class="footer-col">
-                    <h3>Our Locations</h3>
+                    <h3 data-i18n="footer_locations">Our Locations</h3>
                     <ul class="contact-list">
                         <li>
                             <i class="fas fa-map-marker-alt text-gold"></i>
-                            <span><b style="color: var(--text-light);">Flagship Outlet</b><br>B-116/1, Shikder Tower
-                                (Ground Floor) Shop#B-04, Behind of
-                                Savar City Center, Savar, Dhaka-1340<br>
-                                <span style="color: var(--color-gold);">Service Hour: 10:00 AM - 12:00 AM</span><br>
-                                <span style="color: green;">Everyday Open</span>
+                            <span><b data-i18n="store_name1" style="color: var(--text-light);">Flagship
+                                    Outlet</b><br><span data-i18n="store_address1">B-116/1, Shikder Tower
+                                    (Ground Floor) Shop#B-04, Behind of Savar City Center, Savar, Dhaka-1340</span><br>
+                                <span data-i18n="store_service_hour1" style="color: var(--color-gold);">Service Hour:
+                                    10:00 AM - 12:00 AM</span><br>
+                                <span data-i18n="store_open_day1" style="color: green;">Everyday Open</span>
                             </span>
                         </li>
                         <li>
                             <i class="fas fa-map-marker-alt text-gold"></i>
-                            <span><b style="color: var(--text-light);">City Center Outlet</b><br>Shop#3039, Level#03
-                                (Lift-03), Savar City Center, Bus
-                                Stand, Savar, Dhaka-1340<br>
-                                <span style="color: var(--color-gold);">Service Hour: 11:00 AM - 09:00 PM</span><br>
-                                <span style="color: red;">Saturday Closed</span>
+                            <span><b data-i18n="store_name2" style="color: var(--text-light);">City Center
+                                    Outlet</b><br><span data-i18n="store_address2">Shop#3039, Level#04 (Lift-03),
+                                    Savar City Center, Bus Stand, Savar, Dhaka-1340</span><br>
+                                <span data-i18n="store_service_hour2" style="color: var(--color-gold);">Service Hour:
+                                    11:00 AM - 09:00 PM</span><br>
+                                <span data-i18n="store_closed_day2" style="color: red;">Saturday Closed</span>
                             </span>
                         </li>
                     </ul>
                 </div>
 
                 <div class="footer-col">
-                    <h3>Stay in Touch</h3>
+                    <h3 data-i18n="footer_touch">Stay in Touch</h3>
                     <ul class="contact-list">
                         <li>
                             <i class="fas fa-phone-alt text-gold"></i>
-                            <span><b>Call Us</b><br><a href="tel:+8801349049227"
+                            <span><b data-i18n="call_us">Call Us</b><br><a href="tel:+8801349049227"
                                     style="color: var(--color-gold)">+88-01349-049227</a></span>
                         </li>
                         <li>
                             <i class="fas fa-envelope text-gold"></i>
-                            <span><b>Email us</b><br><a href="mailto:menzgroom.bd@gmail.com"
+                            <span><b data-i18n="email_us">Email us</b><br><a href="mailto:menzgroom.bd@gmail.com"
                                     style="color: var(--color-gold)">menzgroom.bd@gmail.com</a></span>
                         </li>
                     </ul>
                     <div class="mt-30">
-                        <p style="color: var(--text-muted)">Follow Us On Social Media</p>
+                        <p data-i18n="follow_us" style="color: var(--text-muted)">Follow Us On Social Media</p>
                     </div>
                     <div>&nbsp;</div>
                     <div class="social-links">
@@ -1407,7 +1442,7 @@
         <div class="footer-bottom">
             <p>&copy;
                 <script>document.write(new Date().getFullYear());</script> Menz Groom Premium Salon & Spa. All
-                rights reserved | Developed by <a href="https://nexuscorporation.com.bd">Nexus</a>
+                rights reserved | Developed by <a href="https://nexcorpbd.com.bd">Nexus</a>
             </p>
         </div>
         </div>
