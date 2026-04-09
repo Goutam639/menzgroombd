@@ -280,7 +280,7 @@ const t = {
     /* ── Footer ─────────────────────────────────────────────────────── */
     footer_locations: {
         en: "Our Locations",
-        bn: "আমাদের শাখা"
+        bn: "আমাদের শাখাসমূহ"
     },
     footer_touch: {
         en: "Stay in Touch",
