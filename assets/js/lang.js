@@ -27,8 +27,9 @@ const t = {
         bn: `মেনজ গ্রুম প্রিমিয়াম সেলুন এন্ড স্পা <br><span class="text-gold">-তে আপনাকে স্বাগতম</span>`,
     },
     hero_desc: {
-        en: `Achieve your dream style with our master barbers.<br> Experience the finest grooming and spa services tailored exclusively for the modern man.`,
-        bn: `আমাদের মাস্টার হেয়ার ষ্টাইলারদের সাথে আপনার স্বপ্নের হেয়ারস্টাইল অর্জন করুন।<br> আধুনিক পুরুষদের জন্য সেরা গ্রুমিং এবং স্পা সেবার অভিজ্ঞতা নিন।`,
+        en: `Experience premium grooming in Savar, where style meets precision. At Menz Groom, we deliver expert haircuts, flawless facials, and modern makeovers designed to elevate your confidence and redefine your look. Step in, stand out, and own your style.`,
+        bn: `সাভারে প্রিমিয়াম গ্রুমিংয়ের অভিজ্ঞতা নিন, যেখানে স্টাইলের সঙ্গে মেলে নিখুঁত যত্ন। Menz Groom-এ আমরা দিই দক্ষ হেয়ার কাট, পারফেক্ট ফেশিয়াল, আর আধুনিক মেকওভার—যা আপনার আত্মবিশ্বাস বাড়িয়ে তোলে এবং লুকে আনে নতুন মাত্রা। আসুন, নিজেকে আরও আকর্ষণীয়ভাবে উপস্থাপন করুন।
+`,
     },
     hero_btn_book: { en: "Book Appointment", bn: "অ্যাপয়েন্টমেন্ট বুক করুন" },
     hero_btn_explore: { en: "Explore Services", bn: "সেবাগুলো দেখুন" },
