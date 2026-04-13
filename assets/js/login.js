@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const username = document.getElementById('username').value.trim();
             const password = document.getElementById('password').value.trim();
 
-            if (username === 'admin' && password === 'nexus639') {
+            if (username === 'admin' && password === 'MZ@2026') {
                 // Success
                 sessionStorage.setItem('menzgroom_admin_logged_in', 'true');
                 window.location.href = 'dashboard.html';
