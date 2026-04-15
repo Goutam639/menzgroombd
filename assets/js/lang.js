@@ -260,11 +260,11 @@ const t = {
     /* ── Team Section ───────────────────────────────────────────────── */
     team_sub: { en: "Our Team", bn: "আমাদের টিম" },
     team_h2: { en: "Meet Our Grooming Experts", bn: "আমাদের গ্রুমিং বিশেষজ্ঞদের সাথে পরিচিত হোন" },
-    team_name1: { en: "Nabila Tabassum", bn: "নাবিলা তাবাসসুম" },
+    team_name1: { en: "Istiak Shfayet", bn: "ইশতিয়াক শাফায়েত" },
     team_role1: { en: "Master Hair Styler", bn: "মাস্টার হেয়ার ষ্টাইলার" },
     team_name2: { en: "Md. Shafin Rahman", bn: "মোঃ শাফিন রহমান" },
     team_role2: { en: "Senior Stylist", bn: "সিনিয়র স্টাইলিস্ট" },
-    team_name3: { en: "Gloria Halder", bn: "গ্লোরিয়া হালদার" },
+    team_name3: { en: "Md. Imran Bashir", bn: "মোঃ ইমরান বাশির" },
     team_role3: { en: "Facial Expert", bn: "ফেসিয়াল বিশেষজ্ঞ" },
     team_name4: { en: "Binoy Kumar Das", bn: "বিনয় কুমার দাস" },
     team_role4: { en: "Color Specialist", bn: "কালার স্পেশালিস্ট" },
