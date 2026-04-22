@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Mobile Menu Toggle
     const mobileMenuBtn = document.getElementById('mobile-menu');
     const navbar = document.getElementById('navbar');
-    
+
     mobileMenuBtn.addEventListener('click', () => {
         navbar.classList.toggle('active');
         const icon = mobileMenuBtn.querySelector('i');
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Sticky Header
     const header = document.getElementById('header');
-    
+
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             header.classList.add('scrolled');
@@ -30,23 +30,23 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            
+
             // Close mobile menu if open
-            if(navbar.classList.contains('active')) {
+            if (navbar.classList.contains('active')) {
                 navbar.classList.remove('active');
                 mobileMenuBtn.querySelector('i').classList.replace('fa-times', 'fa-bars');
             }
 
             const targetId = this.getAttribute('href');
-            if(targetId === '#') return;
-            
+            if (targetId === '#') return;
+
             const targetElement = document.querySelector(targetId);
-            
+
             if (targetElement) {
                 // Adjust scroll position for header height
                 const headerHeight = header.offsetHeight;
                 const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - headerHeight;
-                
+
                 window.scrollTo({
                     top: targetPosition,
                     behavior: 'smooth'
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Scroll Reveal Animation via Intersection Observer
     const revealElements = document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right');
-    
+
     const revealCallback = (entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -66,15 +66,15 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     };
-    
+
     const revealOptions = {
         root: null,
         rootMargin: '0px 0px -100px 0px',
         threshold: 0.1
     };
-    
+
     const revealObserver = new IntersectionObserver(revealCallback, revealOptions);
-    
+
     revealElements.forEach(el => {
         revealObserver.observe(el);
     });
@@ -82,11 +82,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // Active Navigation Link Update on Scroll
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.nav-link');
-    
+
     window.addEventListener('scroll', () => {
         let current = '';
         const headerHeight = header.offsetHeight;
-        
+
         sections.forEach(section => {
             const sectionTop = section.offsetTop - headerHeight - 100;
             const sectionHeight = section.clientHeight;
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 current = section.getAttribute('id');
             }
         });
-        
+
         navLinks.forEach(link => {
             link.classList.remove('active');
             if (link.getAttribute('href') === `#${current}`) {
@@ -109,18 +109,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const nextBtn = document.getElementById('nextTestimonial');
     const prevBtn = document.getElementById('prevTestimonial');
     const dotsContainer = document.getElementById('testimonialDots');
-    
+
     if (track && slides.length > 0) {
         let currentIndex = 0;
         let isMobile = window.innerWidth < 768;
         let slidesPerView = isMobile ? 1 : 2;
         let totalDots = Math.ceil((slides.length - slidesPerView) / slidesPerView) + 1;
-        
+
         // Handle window resize
         window.addEventListener('resize', () => {
             const wasMobile = isMobile;
             isMobile = window.innerWidth < 768;
-            
+
             if (wasMobile !== isMobile) {
                 slidesPerView = isMobile ? 1 : 2;
                 totalDots = Math.max(1, Math.ceil((slides.length - slidesPerView) / slidesPerView) + 1);
@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Each slide is either 100% or 50% width depending on mobile/desktop
             const slideWidth = isMobile ? 100 : 50;
             const translateAmount = -(currentIndex * slidesPerView * slideWidth);
-            
+
             track.style.transform = `translateX(${translateAmount}%)`;
 
             // Update dots
@@ -281,3 +281,94 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+
+// Custom Cursor Style
+const wrap = document.querySelector(".canvas-wrap");
+const glow = document.querySelector(".cursor-glow");
+const core = document.querySelector(".cursor-core");
+
+let mouseX = window.innerWidth / 2;
+let mouseY = window.innerHeight / 2;
+let glowX = mouseX;
+let glowY = mouseY;
+
+function createTrail(x, y, speed = 1) {
+    const trail = document.createElement("div");
+    trail.className = "trail";
+
+    const size = Math.max(18, Math.min(60, 20 + speed * 0.35));
+    trail.style.width = `${size}px`;
+    trail.style.height = `${size}px`;
+    trail.style.left = `${x}px`;
+    trail.style.top = `${y}px`;
+    trail.style.animationDuration = `${0.5 + Math.random() * 0.35}s`;
+
+    wrap.appendChild(trail);
+
+    setTimeout(() => trail.remove(), 900);
+}
+
+function createSpark(x, y) {
+    const spark = document.createElement("div");
+    spark.className = "spark";
+    spark.style.left = `${x}px`;
+    spark.style.top = `${y}px`;
+
+    const dx = `${(Math.random() - 0.5) * 80}px`;
+    const dy = `${(Math.random() - 0.5) * 80}px`;
+    spark.style.setProperty("--dx", dx);
+    spark.style.setProperty("--dy", dy);
+
+    wrap.appendChild(spark);
+
+    setTimeout(() => spark.remove(), 850);
+}
+
+let lastX = mouseX;
+let lastY = mouseY;
+
+window.addEventListener("mousemove", (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+
+    const dx = mouseX - lastX;
+    const dy = mouseY - lastY;
+    const speed = Math.sqrt(dx * dx + dy * dy);
+
+    core.style.left = `${mouseX}px`;
+    core.style.top = `${mouseY}px`;
+
+    createTrail(mouseX, mouseY, speed);
+
+    const sparksCount = speed > 25 ? 2 : 0;
+    for (let i = 0; i < sparksCount; i++) {
+        createSpark(mouseX, mouseY);
+    }
+
+    lastX = mouseX;
+    lastY = mouseY;
+});
+
+function animate() {
+    glowX += (mouseX - glowX) * 0.15;
+    glowY += (mouseY - glowY) * 0.15;
+
+    glow.style.left = `${glowX}px`;
+    glow.style.top = `${glowY}px`;
+
+    requestAnimationFrame(animate);
+}
+
+animate();
+
+window.addEventListener("mousedown", () => {
+    core.style.transform = "translate(-50%, -50%) scale(1.8)";
+    glow.style.transform = "translate(-50%, -50%) scale(1.2)";
+});
+
+window.addEventListener("mouseup", () => {
+    core.style.transform = "translate(-50%, -50%) scale(1)";
+    glow.style.transform = "translate(-50%, -50%) scale(1)";
+});
+
